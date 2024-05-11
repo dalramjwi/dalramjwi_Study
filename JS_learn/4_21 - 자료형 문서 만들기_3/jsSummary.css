@@ -1,0 +1,265 @@
+/* 전체설정 */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Noto+Sans+KR:wght@100..900&family=Rowdies:wght@400;700&family=Song+Myung&display=swap");
+
+body {
+  font-family: Gowun Batang;
+  margin: 0;
+  background: linear-gradient(177deg, #b2cdd394, #3a42478f, transparent);
+}
+body > div {
+  /* border: 30px solid transparent;
+  border-image: url(./img/doma.png) 30; */
+  text-align: left;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+/* 공통 선택자 */
+.defi {
+  width: 50vw;
+  margin: auto;
+  font-size: 30px;
+  margin-bottom: 2vw;
+  margin-left: 20vw;
+}
+span {
+  color: rebeccapurple;
+}
+.easy {
+  width: 55vw;
+  margin: auto;
+  font-size: 25px;
+  border-top: double gray;
+  padding-top: 2vw;
+  padding-left: 10vw;
+  line-height: 2.2vw;
+  position: relative;
+}
+.easy_icon {
+  position: absolute;
+  top: 61vh;
+  left: 22.5vw;
+  color: rgba(100, 135, 175, 0.5);
+}
+.defi_Ex {
+  width: 55vw;
+  margin: auto;
+  font-size: 28px;
+  border-top: double gray;
+  line-height: 2.5vw;
+  padding-left: 10vw;
+  padding-top: 2vw;
+}
+table {
+  margin-bottom: 1.5vw;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  width: 49.5vw;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.comment {
+  color: rgb(85 85 87);
+}
+.hld {
+  color: #000dbb;
+}
+.var {
+  color: rgb(47, 68, 23);
+}
+.c1 {
+  margin: auto;
+  margin-top: 7.5vw;
+  background-color: rgb(149 154 157);
+  width: 77vw;
+  box-shadow: 1px 1px 20px 9px rgb(116, 120, 122);
+  padding-bottom: 2.5vw;
+  font-size: 28px;
+  line-height: 2.5vw;
+}
+.c2 {
+  margin: auto;
+  margin-top: 7.5vw;
+  background-color: rgb(180 183 185 / 37%);
+  width: 77vw;
+  box-shadow: 1px 1px 20px 9px rgb(116, 120, 122);
+  padding-bottom: 2.5vw;
+  font-size: 28px;
+  line-height: 2.5vw;
+}
+#obj {
+  background: rgba(255, 255, 255, 0.58);
+  margin: auto;
+  border-top: 7px black double;
+  border-bottom: 7px black double;
+  width: 85vw;
+  margin-top: 8vh;
+  padding: 2vw;
+  color: rgb(0, 0, 0);
+  box-shadow: 15px 15px 5px 5px gray;
+  padding-bottom: 4.5vw;
+}
+.top {
+  color: rebeccapurple;
+  text-align: center;
+  margin-top: 2vw;
+}
+.top > a {
+  color: rebeccapurple;
+  text-align: center;
+}
+/* title */
+.title > h1 {
+  font-family: Song Myung;
+  background-image: -webkit-linear-gradient(
+    rgb(100 135 175) 60%,
+    rgb(88 94 109 / 81%) 40%
+  );
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripe 1.5s linear infinite;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+@-webkit-keyframes stripe {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+@keyframes stripe {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+/* 애니메이션에  postition은 왜? */
+.title {
+  background: rgba(255, 255, 255, 0.58);
+  margin: auto;
+  border-top: 7px black double;
+  border-bottom: 7px black double;
+  width: 85vw;
+  margin-top: 6vh;
+  padding: 2vw;
+  color: rgb(0, 0, 0);
+  box-shadow: 15px 15px 5px 5px gray;
+}
+.title > div > p > span {
+  color: rebeccapurple;
+}
+.title > div:nth-of-type(3) {
+  display: flex;
+  gap: 2vw;
+  margin-top: 3vw;
+  margin-left: 67.5vw;
+}
+.title > div:nth-of-type(3) > div {
+  background-color: #ffff6ebd;
+  width: 7vw;
+  text-align: center;
+}
+.title > div:nth-of-type(3) > div > a {
+  text-decoration: none;
+  color: rgb(100 135 175);
+  font-size: 25px;
+  letter-spacing: 0.1vw;
+}
+/* pri  */
+#pri {
+  background: rgba(255, 255, 255, 0.58);
+  margin: auto;
+  border-top: 7px black double;
+  border-bottom: 7px black double;
+  width: 85vw;
+  margin-top: 8vh;
+  padding: 2vw;
+  color: rgb(0, 0, 0);
+  box-shadow: 15px 15px 5px 5px gray;
+  padding-bottom: 4.5vw;
+}
+#pri > div > h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+}
+.code {
+  background-color: #bbc7ca;
+  width: 35vw;
+  padding-top: 1.1vh;
+  padding-bottom: 1.1vh;
+  padding-left: 4.1vh;
+  padding-right: 4.1vh;
+  margin-top: 3vw;
+  box-shadow: inset 0px 0px 15px 5px #99a6a9;
+}
+#pri > div > div > p:nth-of-type(3) {
+  margin-bottom: 3vw;
+}
+#pri > div > div > p:nth-of-type(4) {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+#pri > div > div > p:nth-of-type(5) {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+#pri > div > div:nth-of-type(2) > p:nth-of-type(2) {
+  margin-top: 3vw;
+}
+.easy_icon_1 {
+  position: absolute;
+  top: 610vh;
+  left: 22.5vw;
+  color: rgba(100, 135, 175, 0.5);
+}
+#pri > div:nth-of-type(2) > div {
+  width: 55vw;
+  margin: auto;
+  font-size: 28px;
+
+  line-height: 2.5vw;
+  padding-top: 2vw;
+}
+#pri > div > div:nth-of-type(2) > div:nth-of-type(2) {
+  margin-bottom: 2vw;
+}
+/* obj */
+#obj > div > h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+}
+#obj > div > div:first-of-type > p:nth-of-type(3) {
+  margin-bottom: 2vw;
+}
+#obj > div > div:first-of-type > p:nth-of-type(4) {
+  margin-bottom: 3vw;
+}
+#obj > div > div:first-of-type > p:nth-of-type(5) {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+#obj > div > div:first-of-type > p:nth-of-type(6) {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+#obj > div > div:nth-of-type(2) {
+  margin-bottom: 3vw;
+}
+.easy_icon_2 {
+  position: absolute;
+  top: 1377vh;
+  left: 22.5vw;
+  color: rgba(100, 135, 175, 0.5);
+}
+#obj > div:nth-of-type(2) > div {
+  padding-left: 11vw;
+  padding-top: 2vw;
+}

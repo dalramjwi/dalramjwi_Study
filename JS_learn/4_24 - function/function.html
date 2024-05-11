@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1 onclick="first()">김수현</h1>
+      <h1 onclick="second ()">멍멍</h1>
+    </div>
+    <script>
+      // function first() {
+      //   var root = window.document.getElementById("root");
+      //   console.dir(root);
+      //   console.dir(root.children[0].innerHTML);
+      //   root.children[0].innerHTML = "김달";
+      // }
+      function first() {
+        var root = window.document.getElementById("root");
+        console.dir(root);
+        console.dir(root.children[0].innerHTML);
+        root.children[0].style.color = "blue";
+        root.children[0].style.background = "red";
+        root.children[0].style.fontSize = "150px";
+        root.children[0].innerHTML = "김달";
+      }
+      function second() {
+        root.children[1].style.color = "red";
+        root.children[1].style.background = "green";
+      }
+    </script>
+  </body>
+</html>

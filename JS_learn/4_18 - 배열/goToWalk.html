@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var goToWork;
+      goToWork = [
+        "알람이 울려서 잠에서 깨기",
+        "시간 보기",
+        "7시 55분 이전이면 자고 이후면 일어나기",
+        "씻기",
+        "수건으로 닦기",
+        "선크림 바르기",
+        "일어나서 텀블러 챙기기",
+        "점심 먹을거 고르기",
+        "고른거 챙기기",
+        "아이패드 챙기기",
+        "날씨 보고 모자 챙길지 말지 결정하기",
+        "헤드셋 쓰기",
+        "강아지랑 인사하기",
+        "버스카드 앱 출발 누르기",
+        "버스 도착 예정 시간 보기",
+        "버스 도착 예정 시간 확인해 맞는 정류장 가기",
+        "정류장에서 버스 기다리기",
+        "버스 타기",
+        "자리에 앉기",
+        "일기 쓰기",
+        "은하수 네거리 도착해서 하차태그 찍기",
+        "버스에서 내리기",
+        "학원까지 걸어가기",
+        "건물에 도착해서 계단 오르기",
+        "강의실까지 걸어가기",
+        "강의실에 도착해 QR코드 찍기",
+        "자리에 짐 두기",
+        "텀블러 꺼내기",
+        "아이패드 꺼내기",
+        "모자 벗기",
+        "텀블러 물 채우러 가기",
+        "자리에 돌아오기",
+        "컴퓨터 전원 켜기",
+        "노션 키기",
+        "하던 작업물이 있다면 작업물 작성하기",
+      ];
+
+      for (let i = 0; i < goToWork.length; i++) {
+        let makeTag = `<li>${goToWork[i]}</li>`;
+        makeTag.textContent = goToWork[i];
+        document.body.innerHTML += makeTag;
+      }
+    </script>
+  </body>
+</html>

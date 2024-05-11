@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    body{
+       background-image: url(dog.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    body > div{
+      background-color: rgba(255, 255, 255, 0.712);
+      height: 100vh;
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;}
+    body > div >h1{
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    body > div > div:nth-of-type(1){
+      background-color: rgba(182, 205, 214, 0.514);
+      border-radius: 30px;
+      width: 80vw;
+    }
+    body > div > div > p{
+      margin: 0.5vw;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      font-weight: bold;
+      
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+  <h1>자바스크립트란?</h1>
+  <div>
+    <p>프로그래밍 언어 중 하나인 자바 스크립트.</p>
+    <p>스크립트 언어의 표준인 ECMA 스크립트를 표준화한 스크립트 언어다.</p>
+  </div>
+
+  <ul>
+    <li class="typ">자바스크립트의 특징</li>
+      <ol>
+        <li>객체기반의 언어이다.</li>
+        <li>함수형 프로그래밍 언어이다.</li>
+        <li>이벤트 주도형 프로그래밍 언어이다.</li>
+        <li>동적인 프로그래밍 언어이다.</li>
+      </ol>
+   
+    <li class="gra">자바스크립트의 기초 문법</li>
+      <ol>
+        <li>유니코드(UTF-8) 사용</li>
+        <li>대소문자 구분</li>
+        <li>단어(공백 포함) 구분</li>
+      </ol>
+      
+    <li class="key">자바스크립트의 키워드</li>
+      <ol>
+        <li>ECMA script 6 예약어</li>
+        <li>식별자 명명 규칙 - 알파벳, 숫자, 밑줄(_), 달러기호($)</li>
+      </ol>
+     
+    <li class="script">자바스크립트의 스크립트 변수</li>
+
+    <li class="type">자바스크립트의 스크립트 타입(자료형,데이터 타입)</li>
+      <ul>원시타입</ul>
+        <ol>
+          <li>숫자</li>
+          <li>문자열 (string)</li>
+          <li>논리형 (boolean)</li>
+          <li>undefined</li>
+          <li>null</li>
+          <li>symbol</li>
+        </ol>
+      <ul>참조타입</ul>
+        <ol>
+          <li>객체</li>
+          <li>함수</li>
+        </ol>
+  </ul>
+  </div>
+</body>
+</html>

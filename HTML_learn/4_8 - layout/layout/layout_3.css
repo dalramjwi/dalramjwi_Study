@@ -1,0 +1,20 @@
+body {width: 100vw; height: 100vh; margin: 0; overflow: hidden;}
+body > div {display: flex;  width: 100vw; height: 100vh; overflow: hidden; background:rgb(245, 241, 241); flex-direction: row;}
+body > div > section:first-child{width: 10vw;height: 100vh;background-color: antiquewhite;}
+body > div > section:nth-child(2){width: 60vw;height: 100vh;background-color: rgb(150, 120, 81);}
+body > div > section:nth-child(3){width: 10vw;height: 100vh;background-color: rgb(202, 142, 64);}
+body > div > section:nth-child(4){width: 10vw;height: 100vh;background-color: rgb(31, 24, 16);}
+body > div > section:nth-child(5){width: 10vw;height: 100vh;background-color: rgb(215, 224, 250);}
+div > section:first-child > div:first-child{width: auto; height: 60vh; background-color: yellow;}
+div > section:first-child > div:last-child{width: auto; height: 40vh; background-color: rgb(56, 56, 39);}
+div > section:nth-child(2) > div:first-child{width: auto; height: 60vh; background-color: aqua;}
+div > section:nth-child(2) > div:last-child{width: auto; height: 60vh; background-color: rgb(23, 31, 31);}
+
+div > section:nth-child(2) > div:last-child > section{ display: flex; flex-direction: row;}
+div > section:nth-child(2) > div:last-child > section:first-child { background-color: blueviolet ; width: 50vw; height: 100vh;} 
+div > section:nth-child(2) > div:last-child > section:nth-child(2) { background-color: rgb(60, 46, 73) ; width: 25vw; height: 100vh;} 
+div > section:nth-child(2) > div:last-child > section:nth-child(2) > div{ background-color: rgb(178, 146, 207) ; width: 15vw; height: 100vh; flex-direction: column; display: flex;} 
+div > section:nth-child(2) > div:last-child > section:nth-child(2) > div > section{ background-color: rgb(31, 29, 32) ; width: auto; height: 20vh;} 
+div > section:nth-child(2) > div:last-child > section:nth-child(3) { background-color: rgb(116, 155, 54) ; width: 25vw; height: 100vh;} 
+div > section:nth-child(2) > div:nth-child(2) {display: flex; flex-direction: row;}
+div > section:last-child > div { width: auto; height: 10vh; background-color: aqua;}

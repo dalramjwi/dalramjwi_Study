@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="roby">
+        <h1>시작하기</h1>
+      </div>
+      <div id="elevator"></div>
+      <div id="third"></div>
+    </div>
+
+    <script>
+      const all = document.body;
+      const root = document.getElementById("root");
+      const roby = document.getElementById("roby");
+      const elevator = document.getElementById("elevator");
+      const third = document.getElementById("third");
+      let st = document.getElementsByTagName("h1")[0];
+      all.style.margin = "0";
+      all.style.overflowX = "hidden";
+      roby.style.width = "100vw";
+      roby.style.height = "100vh";
+      roby.style.backgroundImage = "url(./img/로비.png)";
+      roby.style.backgroundSize = "cover";
+      root.style.color = "white";
+      st.style.lineHeight = "100vh";
+      st.style.textAlign = "center";
+      const t1 = [
+        "뻑뻑한 눈을 다시 감았다 떴다. 오래 방치된 건물 답게 퀘퀘한 공기가 코를 간지럽혔다. 깨진 유리창 너머로 희미한 빛이 새어 들어왔다. 문득 두려움이 밀려들어왔다. 하지만 가야만 했다. 내가 찾아야 하는 것이 이곳에 존재하기 때문이다. 다시금 마음을 다잡고 나서는 엘리베이터를 향해 걸어갔다.",
+      ];
+      const t2 = [
+        "오래 방치된 건물 안의 엘리베이터답지 않게 엘리베이터의 외관은 이질적으로 매우 깔끔했다. 건물의 한 켠에 존재하는 계단이 무너져 있는 모습과 대비되어 더욱 더 수상해보였다. 하지만 내게는 물건을 되찾기 위해서 건물의 상층부로 향해야 했고, 선택지는 이 엘리베이터 밖에 없었다. 숨을 깊게 들이쉬었다가 내쉬며 나는 긴장된 마음을 다스리려 노력했다. 엘리베이터의 버튼을 누르려던 순간, 나는 특이한 버튼을 발견했다.",
+      ];
+      const t3 = [
+        "이 버튼의 용도는 무엇일까? 나는 궁금증에 그 버튼을 눌러보았다. ",
+      ];
+      const t4 = [
+        "아무것도 작동하지 않는 것 싶더니, 이내 엘리베이터 위에 달려 있던 동그란 패널에 무언가가 나타났다. 그리고 나는, 이상한 광경을 목도했다.",
+      ];
+      const t5 = [
+        "저것은.. 스누피 아닌가? 저게 왜 여기에 존재하는 것이지? 나는 두 눈을 의심했다. 엘리베이터 안에 인간이 존재하거나 동물이 존재한다면, 그것은 놀랍거나 괴이한 일이어도 충분히 일어날 수 있는 일이다. 하지만 현실에 존재하지 않는 강아지 캐릭터가 안에 존재한다는 것은…",
+      ];
+      const t6 = [
+        "혹시 저것은 컴퓨터 그래픽인 것인가? 그렇다면 도대체 무슨 의도로 이렇게 만들어 둔 것이지? 나는 치솟는 불안감에 땀이 나기 시작했다. 그때, 동그란 패널이 꺼졌다.",
+      ];
+      const t7 = [
+        "시간이 지나서 꺼진 것인가? 이것은 아이들을 위한 간단한 오락 장치인 것인가? 하지만 내가 살고 있을 때 까지만 해도 이러한 것을 설치한 것을 전혀 보지 못했는데.. 나는 이 괴이한 엘리베이터의 버튼을 다시 눌러보기로 결정했다.",
+      ];
+      const t8 = [
+        "그러자 또 다른 캐릭터가 나타났다. 무엇인지도 모르지만, 분명 아동용 캐릭터일 것이 분명한 귀여운 생김새는 오히려 내게 이질감을 주었다. 나는 아무것도 하지 못한 채로, 그 패널만 바라보았다.",
+      ];
+      const t9 = ["잠시 고민하다, 마지막으로 다시 눌러보기로 했다."];
+      const t10 = [
+        "다행히도 패널 안의 모습은 텅 빈 모습이었다. 나는 엘리베이터 탑승 버튼을 누르기로 마음 먹었다.",
+      ];
+      st.addEventListener("click", start);
+      function start() {
+        st.style.display = "none";
+        roby.style.backgroundImage = "url(./img/로비.png)";
+        const basicDiv = document.createElement("div");
+        roby.append(basicDiv);
+        roby.style.position = "relative";
+        basicDiv.style.background = "rgb(255 255 255 / 70%)";
+        basicDiv.style.width = "100vw";
+        basicDiv.style.height = "20%";
+        basicDiv.style.position = "absolute";
+        basicDiv.style.bottom = "0px";
+        basicDiv.append(t1);
+        basicDiv.style.color = "black";
+        basicDiv.style.fontWeight = "bold";
+        basicDiv.style.padding = "1vw";
+        const next = document.createElement("button");
+        basicDiv.append(next);
+        next.textContent = "다음으로";
+        next.addEventListener("click", goElevator);
+      }
+      function goElevator() {
+        roby.style.display = "none";
+        root.style.position = "relative";
+        elevator.style.width = "100vw";
+        elevator.style.height = "100vh";
+        elevator.style.background = "url(./img/elevator_color.jpg)";
+        elevator.style.backgroundSize = "contain";
+        const secondDiv = document.createElement("div");
+        elevator.append(secondDiv);
+        elevator.style.position = "relative";
+        secondDiv.style.background = "rgb(255 255 255 / 70%)";
+        secondDiv.style.width = "100vw";
+        secondDiv.style.height = "20%";
+        secondDiv.style.position = "absolute";
+        secondDiv.style.bottom = "0px";
+        secondDiv.style.color = "black";
+        secondDiv.style.fontWeight = "bold";
+        secondDiv.style.padding = "1vw";
+        secondDiv.append(t2);
+        const next = document.createElement("button");
+        secondDiv.append(next);
+        next.textContent = "자세히 보기";
+        next.addEventListener("click", elevatorCO);
+        function elevatorCO() {
+          next.style.display = "none";
+          const nextt = document.createElement("button");
+          secondDiv.append(nextt);
+          nextt.textContent = "수상해보이는 곳을 누르기";
+          elevator.style.backgroundImage = "url(./img/elevator_color.jpg)";
+
+          elevator.style.backgroundSize = "cover";
+          const pannel = document.createElement("div");
+          elevator.append(pannel);
+          pannel.style.position = "absolute";
+          pannel.style.top = "48vh";
+          pannel.style.height = "30vh";
+          pannel.style.width = "100vw";
+          pannel.addEventListener("click", at4);
+          function at4() {
+            nextt.style.display = "none";
+            secondDiv.append(t4);
+            const next = document.createElement("button");
+            secondDiv.append(next);
+            next.textContent = "살펴보기";
+            next.addEventListener("click", look);
+            function look() {
+              elevator.style.display = "none";
+              third.style.width = "100vw";
+              third.style.height = "100vh";
+              third.style.backgroundImage = "url(./img/다운로드.jpg)";
+              third.style.backgroundSize = "cover";
+              const thirdDiv = document.createElement("div");
+              third.append(thirdDiv);
+              thirdDiv.style.position = "relative";
+              thirdDiv.style.background = "rgb(255 255 255 / 70%)";
+              thirdDiv.style.width = "100vw";
+              thirdDiv.style.height = "20%";
+              thirdDiv.style.position = "absolute";
+              thirdDiv.style.bottom = "0px";
+              thirdDiv.style.color = "black";
+              thirdDiv.style.fontWeight = "bold";
+              thirdDiv.style.padding = "1vw";
+              thirdDiv.append(t5);
+              const next = document.createElement("button");
+              thirdDiv.append(next);
+              next.textContent = "생각하기";
+              next.addEventListener("click", more);
+              function more() {
+                thirdDiv.append(t6);
+                next.style.display = "none";
+                const nextt = document.createElement("button");
+                thirdDiv.append(nextt);
+                nextt.textContent = "살펴보기";
+                nextt.addEventListener("click", back);
+                function back() {
+                  third.style.backgroundImage = "url(./img/elevator_color.jpg)";
+                  third.style.backgroundSize = "cover";
+                  thirdDiv.style.display = "none";
+                  const thirrdDiv = document.createElement("div");
+                  third.append(thirrdDiv);
+                  thirrdDiv.style.position = "relative";
+                  thirrdDiv.style.background = "rgb(255 255 255 / 70%)";
+                  thirrdDiv.style.width = "100vw";
+                  thirrdDiv.style.height = "20%";
+                  thirrdDiv.style.position = "absolute";
+                  thirrdDiv.style.bottom = "0px";
+                  thirrdDiv.style.color = "black";
+                  thirrdDiv.style.fontWeight = "bold";
+                  thirrdDiv.style.padding = "1vw";
+                  thirrdDiv.append(t7);
+                  const next = document.createElement("button");
+                  thirrdDiv.append(next);
+                  next.textContent = "누르기";
+                  next.addEventListener("click", push);
+                  function push() {
+                    third.style.backgroundImage = "url(./img/다운로드_2.jpg)";
+                    third.style.backgroundSize = "cover";
+                    thirrdDiv.style.display = "none";
+                    const thirdDiv = document.createElement("div");
+                    third.append(thirdDiv);
+                    thirdDiv.style.position = "relative";
+                    thirdDiv.style.background = "rgb(255 255 255 / 70%)";
+                    thirdDiv.style.width = "100vw";
+                    thirdDiv.style.height = "20%";
+                    thirdDiv.style.position = "absolute";
+                    thirdDiv.style.bottom = "0px";
+                    thirdDiv.style.color = "black";
+                    thirdDiv.style.fontWeight = "bold";
+                    thirdDiv.style.padding = "1vw";
+                    thirdDiv.append(t8);
+                    const next = document.createElement("button");
+                    thirdDiv.append(next);
+                    next.textContent = "다음으로";
+                    next.addEventListener("click", textnext);
+                    function textnext() {
+                      next.style.display = "none";
+                      thirdDiv.append(t9);
+                      const nextt = document.createElement("button");
+                      thirdDiv.append(nextt);
+                      nextt.textContent = "누르기";
+                      nextt.addEventListener("click", pushAgain);
+                      function pushAgain() {
+                        third.style.backgroundImage = "url(./img/none.jpg)";
+                        third.style.backgroundSize = "cover";
+                        thirdDiv.style.display = "none";
+                        const thirrdDiv = document.createElement("div");
+                        third.append(thirrdDiv);
+                        thirrdDiv.style.position = "relative";
+                        thirrdDiv.style.background = "rgb(255 255 255 / 70%)";
+                        thirrdDiv.style.width = "100vw";
+                        thirrdDiv.style.height = "20%";
+                        thirrdDiv.style.position = "absolute";
+                        thirrdDiv.style.bottom = "0px";
+                        thirrdDiv.style.color = "black";
+                        thirrdDiv.style.fontWeight = "bold";
+                        thirrdDiv.style.padding = "1vw";
+                        thirrdDiv.append(t10);
+                        const next = document.createElement("button");
+                        thirrdDiv.append(next);
+                        next.textContent = "누르기";
+                        next.addEventListener("click");
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

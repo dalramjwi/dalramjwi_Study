@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subejct-2 김수현</title>
+    <script src="./basic-data.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let root = document.getElementById("root");
+      let mediaQueries = {
+        "max-width: 600px": {
+          root: {
+            gridTemplateColumns: "repeat(1, 1fr)",
+            gridAutoRows: "120px",
+
+            children: {
+              minHeight: "120px",
+            },
+          },
+        },
+
+        "min-width: 601px and max-width: 900px": {
+          root: {
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gridAutoRows: "minmax(150px, auto)",
+
+            children: {
+              minHeight: "150px",
+            },
+          },
+        },
+      };
+
+      //names의 내용을 js에서 div를 만들어 보여준다 - for문 활용
+      for (let nIdx = 0; nIdx < names.length; nIdx++) {
+        let name = names[nIdx];
+
+        let element = document.createElement("div");
+        element.textContent = name;
+        root.appendChild(element);
+      }
+      //style 지정 - root
+      root.style.display = "grid";
+      root.style.gridTemplateColumns = "repeat(5, 1fr)";
+      // root.style.gridTemplateRows = "repeat(4,1fr)"; = 가로 위 줄 얇아지는 것 이것을 주석처리하면 보이지 않게 된다.
+      root.style.gap = "1vw";
+      root.style.width = "100vw";
+      root.style.minHeight = "100vh";
+      root.style.height = "auto";
+      root.style.margin = "2vw auto";
+      root.style.gridAutoRows = "minmax(150px, auto)";
+
+      // root.style.margin = "0";
+      // root.style.padding = "0";
+      // root.style.boxSizing = "border-box";
+      // root.style.overflowX = "hidden";
+
+      //style 지정 - root.children = div
+      function d_dP(dP) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.display = dP;
+        }
+      }
+      d_dP("flex");
+
+      function d_aI(aI) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.alignItems = aI;
+        }
+      }
+      d_aI("center");
+
+      function d_jC(jC) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.justifyContent = jC;
+        }
+      }
+      d_jC("center");
+
+      function d_fS(fS) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.fontSize = fS;
+        }
+      }
+      d_fS("1rem");
+
+      function d_bC(bC) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.backgroundColor = bC;
+        }
+      }
+      d_bC("#f0f0f0");
+
+      function d_bD(bD) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.border = bD;
+        }
+      }
+      d_bD("1px solid #ccc");
+
+      function d_pD(pD) {
+        for (var i = 0; i < root.children.length; i++) {
+          root.children[i].style.padding = pD;
+        }
+      }
+      d_pD("1vw");
+      //사이즈
+      function mida() {
+        if (matchMedia("(max-width: 600px)").matches) {
+          root.style.gridTemplateColumns =
+            mediaQueries["max-width: 600px"].root.gridTemplateColumns;
+          root.style.gridAutoRows =
+            mediaQueries["max-width: 600px"].root.gridAutoRows;
+          root.children.style.minHeight =
+            mediaQueries["max-width: 600px"].children.minHeight;
+        } else if (matchMedia("( min-width : 601px  )").matches) {
+          root.style.gridTemplateColumns =
+            mediaQueries[
+              "min-width: 601px and max-width: 900px"
+            ].root.gridTemplateColumns;
+          root.style.gridAutoRows =
+            mediaQueries[
+              "min-width: 601px and max-width: 900px"
+            ].root.gridAutoRows;
+          root.children.minHeight =
+            mediaQueries[
+              "min-width: 601px and max-width: 900px"
+            ].children.minHeight;
+        } else {
+          root.style.gridTemplateColumns.style = "repeat(5 ,1fr)";
+          root.style.gridTemplateRows.style = "repeat(4, 1fr)";
+        }
+      }
+      window.addEventListener("resize", mida);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style> 
+  /* 디자이너들이 쓰는 마크업 방식 */
+    body > div > h1{color: pink;}
+   
+  </style> -->
+</head>
+<body>
+  <!-- body 태그 대신 편집할 부모 요소 -->
+  <div id="root">
+    <h1>김수현</h1>
+  </div>
+  <script>
+    window.console.log(document.getElementsByTagName('h1'));
+    window.console.log(document.getElementsByTagName('h1')[0].innerText);
+    var h1 = document.getElementsByTagName('h1')[0];
+    h1.innerText = "공미남";
+    h1.style.color = "pink";
+    h1.style.backgroundColor = "gray";
+  </script>
+</body>
+</html>

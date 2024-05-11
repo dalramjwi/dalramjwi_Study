@@ -1,0 +1,5 @@
+body {width: 100vw; height: 100vh; margin: 0; overflow: hidden;}
+body > div {display: flex;  width: 100vw; height: 100vh; overflow: hidden; background:rgb(245, 241, 241); flex-direction: row;}
+body > div > section:first-child{width: 70vw; background-color: aqua;}
+body > div > section:nth-child(2){width: 30vw; background-color: rgb(27, 85, 85);}
+BODY > div > section > div:first-child{height: 70vh; background-color: red;}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function whatWork(inputString) {
+        //지역 변수
+        let result = "";
+        let isWhatWorked = false;
+        let space = " ";
+        for (let i = 0; i < inputString.length; i++) {
+          if (inputString[i] !== space) {
+            if (isWhatWorked === true) {
+              result = result + inputString[i];
+            } else {
+              if (inputString[i] !== space) {
+                isWhatWorked = true;
+                result = result + inputString[i];
+              }
+            }
+          }
+        }
+        return result;
+      }
+      const quotes =
+        "성공은 결과이지 목적이 아니다. 목적은 당신이 무엇을 하느냐이다.";
+      const trimmedQuotes = whatWork(quotes);
+      console.log(trimmedQuotes);
+    </script>
+  </body>
+</html>

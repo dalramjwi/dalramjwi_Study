@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    * 변수(공간) 선언시 RAM 메모리 어느 부분에 공간이 만들어진다.
+    * a라는 공간은 변하지 않지만 안에 담긴 내용은 변할 수 있다. 후에 재 할당된 값이 출력된다.
+   -->
+  <script>
+    var a;
+    a = 1; //변수 a에 값 1이 대입되었다. <- 이항연산자 라고 한다.
+    window.console.log(a);
+    var me = {
+      이름:["송","이현"],
+      성별: "남자",
+      나이 : "30",
+      가족:["봄", "어머니", "아버지"],
+      짝꿍:["김수현", "현재외출중"],
+    };
+    window.console.log(me);
+    var coffe = {
+      이름 : "아메리카노",
+      용량 : "1L",
+      카페인 : "O",
+      얼음 : "O" ,
+    }
+    const caffeine = 'javascript'.includes('O');
+    window.console.log(coffe);
+    
+  </script>
+</body>
+</html>

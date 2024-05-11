@@ -1,0 +1,30 @@
+/* 전체 */
+body {overflow-x: hidden; width: 100vw; height: auto;}
+div {width: 100vw; height: auto; margin: auto; text-align: center; background-color: black; color: white;}
+/* 공통 크기 */
+h1 {font-size: 56px;}
+h2 {font-size: 62.03px;}
+h3 {font-size: 20.67px;}
+h4 {font-size: 17.23px;}
+h5 {font-size: 80px;}
+/* aside-국적 */
+header > aside {display: flex; flex-direction: row; height: auto; position: relative;}
+header > aside > div{ background-color: rgb(240, 240, 242); height: auto; display: flex; flex-direction: row;  color: black; margin: auto; text-align: center;padding-right: 40vw; padding-left: 40vw;}
+header > aside > div > p{color: black; font-size: 1.2rem;}
+header > aside > div > select{font-size: 1.5rem; height: 2.8vh; margin: auto;}
+header > aside > div > button{font-size: 1.4rem; background-color: black; color: white; height: 2.8vh; margin: auto;}
+/* nav 부분 */
+header > nav {background-color: black; color: white; }
+header > nav > ul{display: flex; flex-direction: row; margin: 0 auto; height: 4vh; justify-content: center; }   
+header > nav > ul > li {display: flex; flex-direction: row;  width: 4vw; }
+header > nav > ul > li > a {color: white; text-decoration: none; margin: auto;} 
+/* main-기본 */
+main {display: flex; flex-direction: column; color: white;}
+/* 아이폰 메인 */
+main > section:first-child{width: auto; height: auto; padding: 17vw; }
+main > section:first-child > a {display: block; padding: 5vw;}
+main > section:first-child > p:last-child{margin: 0;}
+/* 소개핵심 */
+main > section:nth-child(2){padding: 5vw; background-color: rgb(16, 16, 16); display: flex; flex-direction: row;}
+main > section:nth-child(2) > div{display: grid; width: 5vw;}
+main > section:nth-child(2) > h1 {display: block; }

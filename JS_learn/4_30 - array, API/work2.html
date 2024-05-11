@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">test</div>
+    <script>
+      const root = document.getElementById("root");
+      const h1 = document.createElement("h1");
+      console.dir(h1);
+      root.appendChild(h1);
+      h1.textContent = "김수현";
+      h1.style.color = "blue";
+      h1.id = "name";
+    </script>
+  </body>
+</html>

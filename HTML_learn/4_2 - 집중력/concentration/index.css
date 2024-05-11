@@ -1,0 +1,13 @@
+#human { position: relative; width: auto; height: auto;}
+#brain {width: 100px; position:absolute; top: 60px; left: 220px;}
+.blink-b {position:absolute; top:25px; width: 180px; left: 110px; ;}
+.blink-c{position: absolute; top: 105px; left: 190px; width: 20px; opacity:0; }
+brain:hover + .blink-c{transition-duration: 0.5s; opacity: 1;}
+.background { width: 100vh;}
+
+/* .brain:hover{background-image: url(./img/line.png) center no-repeat;} */
+
+/* 왜 brain 이미지 클릭영역이 뇌 자체가 아니라 일부인지? position으로 조정해서? 잘 모르겠음 */
+/* edge 브라우저에서는 사이즈 조절하면 다 날아가는데 live서버로 볼땐 아님. 뭐가 진짠지.. */
+/* 눈 감고 있는 걸 만들고 싶어서 brain hover background image 삽입 방식으로 해봤는데 안돼서 포기함 
+형제결합자 써봤는데도 안됨*/

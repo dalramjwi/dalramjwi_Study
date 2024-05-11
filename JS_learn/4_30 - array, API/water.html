@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        z-index: 3;
+        margin: 0;
+        overflow-x: hidden;
+        background-image: url(./img/water.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+      #root {
+        position: relative;
+        background-image: url(./img/cameralayout.png);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        z-index: 2;
+      }
+      #fishOne > img {
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        top: 20vw;
+        left: 15vw;
+      }
+      #fishTwo > img {
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        top: 53vw;
+        left: 55vw;
+        filter: invert(21%) sepia(27%) saturate(678%);
+        transform: rotate(177deg);
+      }
+      #fishThree > img {
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        bottom: 43vw;
+        left: 35vw;
+        filter: invert(100%) sepia(127%);
+        transform: rotate(95deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="fishOne"><img src="./img/fishfish.png" alt="" /></div>
+      <div id="fishTwo"><img src="./img/fishfish.png" alt="" /></div>
+      <div id="fishThree"><img src="./img/fishfish.png" alt="" /></div>
+    </div>
+    <script>
+      const root = document.querySelector("#root");
+      // div id를 같은 이름의 변수로 할당할게
+      let fishOne = document.getElementById("fishOne");
+      let fishTwo = document.getElementById("fishTwo");
+      let fishThree = document.getElementById("fishThree");
+
+      // 세가지의 이미지가 클릭되었을때 CO 함수가 실행되어줘
+      function a() {
+        if (fishOne.click) {
+          fishOne.addEventListener("click", CO);
+        } else if (fishTwo.click) {
+          fishTwo.addEventListener("click", CO);
+        } else if (fishThree.click) {
+          fishThree.addEventListener("click", CO);
+        }
+      }
+      a();
+      fishOne.addEventListener("click", CO);
+      fishTwo.addEventListener("click", CO);
+      fishThree.addEventListener("click", CO);
+
+      // CO 함수는 잉어 위에 angel 이미지가 나타나는 것이야
+      function CO() {
+        const angel = document.createElement("div");
+        root.append(angel);
+        angel.style.width = "58vw";
+        angel.style.height = "33vh";
+        angel.style.backgroundImage = "url(./img/angel.png)";
+        angel.style.backgroundSize = "contain";
+        angel.style.position = "absolute";
+        angel.style.top = "26vh";
+        angel.style.left = "12vh";
+        angel.style.zIndex = "4";
+
+        // 그때 물고기를 클릭하면 사라지게 할거야
+        // function none() {
+        //   if (fishOne.addEventListener("click")) {
+        //     fishOne.style.display = "none";
+        //   } else if (fishTwo.click) {
+        //     fishTwo.style.display = "none";
+        //   }
+        // }
+
+        fishOne.addEventListener("click", none1);
+        function none1() {
+          angel.style.display = "none";
+          fishOne.style.display = "none";
+        }
+        fishTwo.addEventListener("click", none2);
+        function none2() {
+          angel.style.display = "none";
+          fishTwo.style.display = "none";
+        }
+        fishThree.addEventListener("click", none3);
+        function none3() {
+          angel.style.display = "none";
+          fishThree.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

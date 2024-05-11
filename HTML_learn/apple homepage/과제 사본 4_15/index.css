@@ -1,0 +1,510 @@
+
+/* 전체 */
+body{ 
+       display: flex;
+       flex-direction: column;
+       overflow-x: hidden; 
+       width: 100vw; 
+       margin: auto;}
+div {
+       text-align: center; 
+       align-items: center;
+       justify-content: center;
+       background-color: black; 
+       color: white;}
+/* 공통 크기 */
+h1 {
+       font-size: 56px;
+       color: rgb(134, 134, 139);}
+h2 {font-size: 62.03px;}
+h3 {font-size: 20.67px;}
+h4 {font-size: 17.23px;}
+h5 {font-size: 80px;}
+/* 할당 */
+:root{
+       /* backgroundcolor */
+       --bgc: rgb(16, 16, 16);
+        /* buttonlayout 1_background*/
+       --btn1_bgc: rgb(51, 51, 53);
+       /* button1layout 1_border-radius */
+       --btn1_brr: 50px;
+       /* button 1_div_background */
+       --btn1_dbgc: rgb(0, 113, 227);
+       /* button 1_div_border-radius */
+       --btn1_div_brr: 100px;
+       /* a_color */
+       --aclr: rgb(41,151,255);
+}   
+/* aside-국적 */
+aside:first-child{
+       background-color:  rgb(240, 240, 242); 
+       width: 100vw; 
+       display: flex; 
+       justify-content: center;}
+aside > div {
+       display: flex; 
+       height: auto; 
+       align-items: center;  
+       gap: 0.5vw; 
+       width: 60%; }
+aside:first-child > div{
+       background-color: rgb(240, 240, 242); 
+       color: black; }
+aside:first-child > div > p {
+       width: 28vw; 
+       flex-grow: 1;}
+aside > div > select{
+       flex-grow: 0.9; 
+       width: 1.2vw; 
+       height: 3.2vh;}
+aside > div > button{
+       background-color: black; 
+       color: white; 
+       border-radius: 8px; 
+       flex-grow: 0.03;}
+aside > div > div {
+       flex-grow: 0.03; 
+       background: rgb(240, 240, 242); 
+       color: black; }
+aside > div > div > a {
+       text-decoration: none;}
+
+ /* nav 부분 */
+ nav{
+       display: flex; 
+       justify-content: center;}
+ nav > ul {
+       display: flex; 
+       list-style: none; 
+       gap: 3vw; } 
+ nav > ul > li> a{
+       color: white; 
+       text-decoration: none; 
+       text-decoration-line: none;}
+
+/* aside-구매안내문 */
+aside:last-child{ 
+       display: flex; 
+       justify-content: center; 
+       align-self: center; 
+       background-color: rgb(17, 17, 17);}
+aside:last-child > div{
+       background-color: rgb(17, 17, 17); 
+       width: 40%;}
+aside:last-child p > a {color: var(--aclr);}
+
+/* 아이폰 메인 */
+main > section:first-child{
+       display: flex; 
+       flex-direction: column; 
+       justify-content: center; 
+       align-items: center;} 
+main > section:first-child > p:first-child{
+       display: flex; 
+       flex-direction: column; 
+       justify-content: flex-end; 
+       font-size: 1.3rem; 
+       height: 10vh; 
+       justify-content: center;}
+main > section:first-child > div {
+       display: flex; 
+       height: 24vh; 
+       align-items: flex-end;}
+main > section:first-child > div >div {
+       display: flex; 
+       flex-direction: column; 
+       height: 3vw;  
+       background-color: var(--btn1_dbgc); 
+       width: 5vw; 
+       justify-content: center; 
+       border-radius: 15px; 
+       height: 3.5vh;}
+main > section:first-child > div > div > a {
+       color: white; 
+       text-decoration: none;}
+main > section:first-child > p:last-child{
+       font-weight: bold; 
+       display: flex; 
+       flex-direction: column; 
+       justify-self: flex-end; 
+       height: 10vh;} 
+/* 소개핵심 */
+main > section:nth-child(2){
+       display: flex;
+       flex-direction: column;
+       height: 100vh;
+       background-color: rgb(17, 17, 17);
+       justify-content: space-around;
+}
+main > section:nth-child(2) > div{
+       display: flex; 
+       flex-direction: column;
+       background-color: rgb(17, 17, 17);
+       gap: 4vw;}
+main > section:nth-child(2) > div > div:first-child{
+       display: flex; 
+       flex-direction: row;
+       gap: 30vw;
+       background-color: rgb(17, 17, 17);
+}
+main > section:nth-child(2) > div >div:first-child > div >  a{
+       color: var(--btn1_dbgc);
+       text-decoration: none;
+}
+main > section:nth-child(2) > div >div:first-child > div {
+       background-color: rgb(17, 17, 17);
+}
+main > section:nth-child(2) > div > div:nth-child(2){
+       display: flex;
+       width: 60vw;
+       height: 40vh;
+       border-radius: 50px;
+}
+/* 보다 자세히 */
+.look{
+       height: 90vh;
+      padding-bottom: 10vh;
+   
+}
+.look > div{
+      
+       padding: 5vw; 
+       padding-left: 10vw;
+       padding-right: 10vw;
+       }
+.look >  div > h1 {
+       display: flex;
+       justify-content: left;
+}
+/* 탐구해보기 */
+
+.search {
+       background-color: rgb(17, 17, 17);
+      
+       }
+.search > div:first-child{
+       height: 0vh;
+       padding-left: 8vw;
+       background-color: rgb(17, 17, 17);
+}
+.search > div > h1 {
+       height: 20vh;
+       padding-top: 2vh;
+       background-color: rgb(17, 17, 17);
+       align-items: center;
+       display: flex;
+       }
+.search > div:nth-child(2){
+       background-color: rgb(17, 17, 17);
+       padding: 8vw;
+       padding-left: 18vw;
+}
+.search >div:nth-child(2) > div{
+       height: 20vh;
+       background-color: rgb(17, 17, 17);
+       padding-left: 3vw;
+}
+.search >div:nth-child(2) > div > h2{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+}
+.search > div:nth-child(3) {
+       background-color: rgb(17, 17, 17);
+       padding-right: 12vw;
+       padding-left: 12vw;
+       display: flex;
+       flex-direction: column;
+}
+.search > div:nth-child(3) >div{
+   background-color: rgb(17, 17, 17); 
+       display: flex;
+       
+}
+
+.search > div:nth-child(3) >div > img:first-child{
+      padding-top: 1vw;
+       background-color: rgb(17, 17, 17);
+}
+.search > div:nth-child(3) >div > img:nth-child(2){
+     padding-left: 1vw;
+      padding-top: 1vw;
+      
+}
+.search >div:nth-child(3) >div> div:first-child >h4{
+      padding-left: 5vw;
+      padding-right: 3vw;
+      background-color: rgb(17, 17, 17);
+  
+}
+.search > div:nth-child(3) > div >div >  h4{
+       grid-row: 3/4;
+       grid-column: 1/2;
+      text-align: left;
+      padding-left: 10vw; 
+      color: rgb(134, 134, 139); 
+      font-weight: 500;
+}
+.search > div:nth-child(3) > div >div >  h4 > span{
+       color: rgb(255, 255, 255); 
+       font-weight: 600;
+}
+
+.search > div:nth-child(3) > div > h3{
+   background-color: rgb(17, 17, 17);
+}
+
+.search > div:nth-child(3) > div >div >  h3{
+       font-size: 20.67px;
+       text-align: left;
+       padding-left: 8vw;
+       padding-right: 5vw;
+       font-weight: 500;
+       color: rgb(134, 134, 139);
+       
+}
+.search > div:nth-child(3) > div >div >  h3 > span{
+       color: white;
+       font-weight: bold;
+}
+.search > div:nth-child(3) > div:last-child{
+      width: 40vh;
+      margin-top: 5vh;
+      margin-bottom: 13vh;
+       background-color:var(--btn1_bgc);
+       border-radius: 30px;
+       height: 5vh;
+        }
+.search > div:nth-child(3) > div:last-child >a{
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+}
+.search > div:nth-child(3) div{
+       background-color: rgb(17, 17, 17);
+}
+.fa-circle-plus{color:var(--btn1_dbgc);}
+/* 프로세서 소개 */
+
+.intro > div > div:first-child >a{
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+       line-height: 5vh;
+}
+.intro > div > div:first-child{
+       margin: auto;
+       width: 17vw;
+    margin-top: 10vh;
+    margin-bottom: 9vh;
+    background-color: var(--btn1_bgc);
+    border-radius: 30px;
+    height: 5vh;
+  
+   }
+/* 버튼레이아웃 */
+.intro > div > p{
+       color: rgb(134, 134, 139);
+       padding-bottom: 5vh;
+       font-weight: bold;
+}
+.intro > div > figcaption{
+       color: rgb(134, 134, 139);
+}
+.intro > div > section{
+       display: flex;
+       margin-top: 4vh;
+      
+}
+.intro > div > section > section{
+       display: flex;
+       flex-direction: column;
+       width: 22vw;
+       padding-left: 24vw;
+    
+       
+}
+.intro > div > section > section > div{
+   
+       text-align: left;
+
+}
+.intro > div > section > section > div >p{
+       color: rgb(134, 134, 139);
+       font-size: 18.21px;
+}
+.intro > div > section > section > div > p > span{
+       color: white;
+       font-weight: bold;
+}
+.intro> div> section > section > div:nth-child(2) >p {
+       font-size: 21px;
+}
+.intro> div > section  > div{
+       padding-left: 9vw;
+
+}
+.intro > div > section > div > p{
+     display: flex;
+     flex-direction: column;
+      align-items: flex-start;
+}
+
+.intro > div > section > div > p > span{
+       color: white;
+       font-size: 42.94px;
+       font-weight: bold;
+}
+.intro> div > section  > div > p > span:first-child, 
+
+.intro> div > section  > div > p > span:last-child{
+      color: rgb(134, 134, 139); 
+      font-size: 21px;
+      
+}
+/* 카메라 소개 */
+.camera > div > a{
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+       line-height: 5vh;
+}
+.camera > div:first-child{
+       margin: auto;
+       width: 17vw;
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    background-color: var(--btn1_bgc);
+    border-radius: 30px;
+    height: 5vh;
+}
+.camera > section{
+       display: flex;
+       flex-direction: column;
+}
+.camera > section > div:first-child{
+       text-align: left;
+       margin-left: 16vw;
+       
+}
+.camera > section > div:first-child > h5{
+       margin-bottom: 3vh;
+}
+.camera > section > div:first-child > p{
+       color: rgb(134, 134, 139);
+       margin-top: 0;
+}
+.camera > section >div:last-child > p{
+       color: rgb(134, 134, 139);
+       text-align: left;
+       padding-left: 16vw;
+}
+.camera > section > div:last-child{
+       margin-bottom: 10vh;
+}
+/* 카메라 예시 */
+.cameraex{
+       overflow: hidden;
+}
+.cameraex > section{
+       position: relative;
+       left: 20vw;
+       
+
+}
+.cameraex >section >p{
+       padding-left: 16vw;
+       text-align: left;
+       color: rgb(134, 134, 139);
+}
+.cameraex > section > p >span{
+       color: white;
+}
+.cameraex > section > section{
+       display: flex;
+       margin: 1vw;
+       gap: 14.5vw;
+       padding-left: 26vw;
+       margin-bottom: 8vw;
+}
+
+.cameraex > section >section >div{
+       display: flex;
+       gap: 0.5vw;
+}
+.cameraex > section > section >div:nth-child(2) >div{
+       background-color: rgba(134, 134, 139,0.5);
+       border-radius: 10px;
+       width: 1.4vw;
+       height: 2.5vh;
+}
+.cameraex > section > section >div:nth-child(2) >div:last-child{
+       background-color: rgb(134, 134, 139);
+       border-radius: 10px;
+       width: 1.4vw;
+       height: 2.5vh;
+}
+.cameraex > div{
+       display: grid;
+       grid-template-columns:0.4fr 0.5fr 0.07fr 0.43fr 0.4fr;
+       grid-template-rows: 0.3fr 0.4fr 0.6fr 0.3fr;
+}
+.cameraex > div > img{
+       grid-row: 1/5;
+       grid-column: 2/3;
+       justify-self: end;
+       border-radius: 20px;
+}
+.cameraex > div > div{
+       grid-row: 2/3;
+       grid-column: 4/5;
+       text-align: left;
+    
+}
+.cameraex > div > div > p{
+       color: rgb(134, 134, 139);
+       font-size: 20.18px;
+}
+.cameraex > div > div > p > span{
+       color: rgb(255, 255, 255);
+}
+
+
+.cameraex > div >div:last-child{
+       grid-row: 3/4;
+       grid-column: 4/5;
+       text-align: left;
+       
+}
+.cameraex > div > div:last-child > p{
+       font-size: 18.05px;
+}
+.cameraex > div:last-child{
+       width: 45vw;
+       height: 0.125vh;
+       background-color: rgb(66, 66, 69);
+       margin: auto;
+       margin-top: 8vw;
+       margin-bottom: 8vw;
+}
+/* 줌 소개 */
+.zoom > p{
+       font-size: 40px;
+       letter-spacing: 0.05vw;
+       font-weight: bold;
+}
+.zoom  > div:nth-of-type(1){
+       margin: auto;
+       width: 10vw;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+    background-color: var(--btn1_bgc);
+    border-radius: 30px;
+    height: 5vh;
+}
+.zoom > div > a{
+       text-decoration: none;
+       color: white;
+      
+       line-height: 5vh;
+}

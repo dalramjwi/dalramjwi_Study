@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>CSS는 디자이너에게 넘겨주기</h1>
+      <p>CSS는 프로그래밍이 아닌, 디자인에 가까운 작업이다.</p>
+      <p>
+        개발자는 CSS의 코어를 이해했기 때문에, CSS 대신에 직접 스크립트로
+        스타일을 조작 할 수 있다.
+      </p>
+      <p>태그는, 객체라는 사실을 잊지 말자.</p>
+    </div>
+    <script>
+      var root = window.document.getElementById("root");
+      window.console.log(root);
+      window.console.dir(root);
+      window.console.dir(root.children);
+      for (var i = 0; i < root.children.length; i++) {
+        console.log(root.children[i]);
+      }
+      root.style.display = "flex";
+      root.style.flexDirection = "column";
+      root.style.alignItems = "center";
+      root.style.justifyContent = "center";
+      root.style.color = "blue";
+    </script>
+  </body>
+</html>

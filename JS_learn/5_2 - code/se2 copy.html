@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function addItem(array, item, index) {
+        let newArray = [];
+        // return newArray;
+        function inner(cuurentIndex) {
+          return currentIndex > index;
+        }
+        for (let i = 0; i <= array.length; i++) {
+          if (i === index) {
+            newArray[i] = item;
+            // console.log(index);
+            //item이 있는데, 어디있지?  매개변수구나
+          } else if (inner(i) === true) {
+            newArray[i] = array[i - 1];
+          } else {
+            newArray[i] = array[i];
+          }
+        }
+      }
+      // newArray 값을 초기화 시키네? 배열 값이구나, 써야겠다. -> 확인
+      let planets = ["배열이에요", "아이템", "숫자가들어가나"];
+      let updatePlanet = addItem(planets, "나 아이템이야", 2);
+      for (let i = 0; i < updatePlanet.length; i++) {
+        console.log(updatePlanet[i]);
+      }
+    </script>
+  </body>
+</html>

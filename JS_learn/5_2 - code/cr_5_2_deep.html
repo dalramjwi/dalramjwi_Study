@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function addItem(array, item, index) {
+        let newArray = [];
+
+        function inner(currentIndex) {
+          return currentIndex > index;
+        }
+
+        for (let i = 0; i <= array.length; i++) {
+          if (i === index) {
+            newArray[i] = item;
+          } else if (inner(i) === true) {
+            newArray[i] = array[i - 1];
+          } else {
+            newArray[i] = array[i];
+          }
+        }
+        return newArray;
+      }
+
+      let planets = ["김달", "귀여워", "봄", "여름", "가을"];
+      console.log(planets);
+      let updatePlanet = addItem(planets, "발바닥", 2);
+      // let updatePlanet2 = addItem(updatePlanet, "발톱", 2);
+      for (let i = 0; i < updatePlanet.length; i++) {
+        console.log(updatePlanet[i]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {width: 100vw; height: 100vh; margin: 0; overflow: hidden;}
+body > div {display: flex;  width: 100%; height: 100%; overflow: hidden; background:rgb(245, 241, 241);}
+body > div > div {display: flex; flex-direction: row;}
+div > div > section {display: flex; flex-direction: column; width: 100vw; height: 100vh;}
+div > div > section:first-child {flex-basis: 15vw; background-color: red;}
+div > div > section:nth-child(2) {flex-basis: 60vw; background-color: yellow;}
+div > div > section:last-child {flex-basis: 25vw; background-color: blue;}
+div > div > section > div{display: flex;}
+div > div > section > div:first-child{width: 100%; height: 60%; background-color: pink;}
+div > div > section > div:nth-child(2){width: 100%; height: 20%; background-color: orange;}
+div > div > section > div:last-child{width: 100%; height: 20%; background-color: magenta;}
+div > div > section:last-child > div:first-child{background-color: aqua; height: 80%;}
+div > div > section:last-child > div:last-child{background-color: rgb(94, 36, 187); height: 20%;}
+div > div> section:last-child > div > section:first-child {width: 50%; background-color: antiquewhite;}
+div > div> section:last-child > div > section:last-child {width: 50%; background-color: blueviolet;}
+div > div> section:last-child > div > section:last-child > div {display: flex; flex-direction: column;}
+div > div > section:last-child > div > section > div:first-child{height: 50%; background-color: brown;}
+div > div > section:last-child > div > section > div:last-child{height: 50%; background-color: darkgoldenrod;}

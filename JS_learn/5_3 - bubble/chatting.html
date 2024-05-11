@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <input id="todo-input" type="text" placeholder="start text something!" />
+    <select id="order-select" title="Order select"></select>
+    <button id="add-button">항목 추가</button>
+    <button id="remove-button">항목 제거</button>
+    <script>
+      //변수 할당
+      let root = document.getElementById("root");
+      let addButton = document.getElementById("add-button");
+      let removeButton = document.getElementById("remove-button");
+      let todoInput = document.getElementById("todo-input");
+      let orderSelect = document.getElementById("order-select");
+      let todoItems = [];
+      //event 추가
+      addButton.addEventListener("click", addItem);
+      removeButton.addEventListener("click", removeItem);
+      updateSelectOptions();
+      //Initialize select options
+
+      //함수 addItem
+      function addItem() {
+        let newItem = getInputValue();
+        let order = getOrder();
+        if (newItem !== "") {
+          if (order === todoItems.length - 1) {
+            todoItems.push(newItem);
+          } else {
+            todoItems.splice(order, 0, newItem);
+          }
+          updateView();
+          todoInput.vaule = "";
+        } else {
+          console.error("할 일을 입력해야 합니다.");
+        }
+      }
+      //함수 getInputValue
+      function getInputValue() {
+        return todoInput.value.trim();
+      }
+      //함수 getOrder
+      function getOrder() {
+        let orderValue = orderSelect.value;
+        if (orderValue === "마지막") {
+          return todoItems.length - 1;
+        } else {
+          return parseInt(orderValue);
+        }
+      }
+      //함수 updateView
+      function updateView() {
+        root.innerHTML = "";
+        for (let i = 0; i < todoItems.length; i++) {
+          let itemElement = document.createElement("p");
+          itemElement.textContent = `${todoItems[i]}`;
+          root.appendChild(itemElement);
+        }
+        updateSelectOptions();
+      }
+      function updateSelectOptions() {
+        let length = todoItems.length;
+        orderSelect.innerHTML = "";
+        for (let i = 0; i < length; i++) {
+          let option = document.createElement("option");
+          option.vaule = i;
+          option.text = `항목 ${i + 1}`;
+          orderSelect.appendChild(option);
+        }
+        let lastOption = document.createElement("option");
+        lastOption.vaule = "마지막";
+        lastOption.text = "마지막";
+        orderSelect.appendChild(lastOption);
+      }
+      //함수 removeItem
+      function removeItem() {
+        let order = getOrder();
+        if (order >= 0 && order < todoItems.length) {
+          todoItems.splice(order, 1);
+          updateView();
+        } else {
+          console.error("유효하지 않은 순서입니다.");
+        }
+      }
+    </script>
+  </body>
+</html>

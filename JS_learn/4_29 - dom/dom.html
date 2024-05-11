@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body > div > h1 {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <h1>김수현</h1>
+    </div>
+    <script>
+      // const root = document.getElementById("root");
+      // console.log(root);
+      // console.dir(root);
+
+      // root.style.color = "red";
+      // root.style.background = "red";
+
+      // 강의에서의 사용한 방법
+      let h1 = document.getElementsByTagName("h1");
+      console.log(h1);
+      h1[0].style.color = "red";
+      console.log(h1[0].style.color);
+    </script>
+  </body>
+</html>

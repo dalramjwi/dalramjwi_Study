@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        z-index: 3;
+        margin: 0;
+        overflow-x: hidden;
+        background-image: url(./img/water.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+      #root {
+        position: relative;
+        background-image: url(./img/cameralayout.png);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        z-index: 2;
+      }
+      #fishOne > img {
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        top: 20vw;
+        left: 15vw;
+      }
+      #fishTwo > img {
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        top: 53vw;
+        left: 55vw;
+        filter: invert(21%) sepia(27%) saturate(678%);
+        transform: rotate(177deg);
+      }
+      #fishThree > img {
+        width: 30vw;
+        height: 30vw;
+        position: absolute;
+        bottom: 43vw;
+        left: 35vw;
+        filter: invert(100%) sepia(127%);
+        transform: rotate(95deg);
+      }
+      #target > img {
+        width: 58vw;
+        height: 33vh;
+        position: absolute;
+        top: 26vh;
+        left: 12vh;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="blank">
+        <div id="fishOne"><img src="./img/fishfish.png" alt="" /></div>
+        <div id="fishTwo"><img src="./img/fishfish.png" alt="" /></div>
+        <div id="fishThree"><img src="./img/fishfish.png" alt="" /></div>
+      </div>
+    </div>
+    <div id="target"><img src="./img/angel.png" alt="" /></div>
+    <script>
+      // div id를 같은 이름의 변수로 할당할게
+      const root = document.querySelector("#root");
+      let fishOne = document.getElementById("fishOne");
+      let fishTwo = document.getElementById("fishTwo");
+      let fishThree = document.getElementById("fishThree");
+      let blank = document.getElementById("blank");
+      let target = document.getElementById("target");
+      target.style.display = "none";
+      fishOne.style.display = "block";
+      fishTwo.style.display = "block";
+      fishThree.style.display = "block";
+      // function show() {}
+      // 1. 물고기가 클릭이 되면 target이 block
+      // 2. 물고기가 클릭이 되면 물고기와 target none
+
+      var fishee = [fishOne, fishTwo, fishThree];
+
+      // function onehide() {
+      //   for (i = 0; i < blank.children.length; i++) {
+      //     fishee[i].addEventListener("click", onefish);
+      //   }
+      // }
+      // function onefish() {
+      //   fishee[0].style.display = "none";
+      // }
+      // console.dir(fishee);
+      // fishee[0].addEventListener("click", hideone);
+      // function hideone() {
+      //   fishee[0].style.display = "none";
+      // }
+
+      for (i = 0; i < fishee.length; i++) {
+        fishee[i].addEventListener("click", hide);
+      }
+      function hide() {
+        if (target.style.display == "none") {
+          target.style.display = "block";
+        }
+
+        // fishee[1].style.display = "none";
+        // fishee[2].style.display = "none";
+      }
+    </script>
+  </body>
+</html>

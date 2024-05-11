@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="black"></div>
+      <div id="white"></div>
+    </div>
+    <script>
+      let root = document.getElementById("root");
+      let white = document.getElementById("white");
+      let black = document.getElementById("black");
+      black.append("검정색");
+      white.append("하얀색");
+      black.style.background = "black";
+      black.style.color = "white";
+      black.style.width = "300px";
+      black.style.height = "300px";
+      black.style.textAlign = "center";
+      black.style.lineHeight = "300px";
+      white.style.background = "pink";
+      white.style.color = "black";
+      white.style.width = "300px";
+      white.style.height = "300px";
+      white.style.textAlign = "center";
+      white.style.lineHeight = "300px";
+
+      function whiteControl() {
+        white.style.display = "none";
+      }
+      white.addEventListener("click", whiteControl);
+      function blackControl() {
+        white.style.display = "block";
+        white.style.width = "100vw";
+        white.style.height = "100vh";
+      }
+      black.addEventListener("click", blackControl);
+      console.log(root, white, black);
+      console.log(root);
+      console.dir(white);
+    </script>
+  </body>
+</html>

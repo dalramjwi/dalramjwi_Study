@@ -1,0 +1,13 @@
+body {width: 100vw; height: 100vh; margin: 0; overflow: hidden; }
+body > div {  width: 100vw; height: 100vh; overflow: hidden; background:rgb(126, 115, 115); display: grid; grid-template-rows: 5fr 1fr 1fr; grid-template-columns: 1fr 4fr 1fr 1fr 1fr;  }
+body > div > section{border: 1px solid black;}
+div > section:first-child{background-color: white; grid-row: 1/2;}
+div > section:nth-child(2){background-color: pink; grid-row: 2/3;}
+div > section:nth-child(3){background-color: rgb(212, 204, 206); grid-row: 3/6;}
+div > section:nth-child(4){background-color: rgb(209, 97, 125); grid-column: 3/4;}
+div > section:nth-child(5){background-color: rgb(236, 9, 66); grid-column: 3/4;}
+div > section:nth-child(6){background-color: rgb(94, 47, 180); grid-column: 3/4;}
+div > section:nth-child(7){background-color: rgb(46, 44, 51); grid-column:5/6; grid-row: 1/2;}
+div > section:nth-child(8){background-color: rgb(31, 133, 56); grid-column:5/6; grid-row: 2/3;}
+div > section:nth-child(9){background-color: rgb(111, 155, 206); grid-column:5/6; grid-row: 3/4;}
+

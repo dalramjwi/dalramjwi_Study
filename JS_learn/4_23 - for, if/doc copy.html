@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>김수현</div>
+      <div>유호영</div>
+      <div>조자연</div>
+    </div>
+    <script>
+      let root = window.document.getElementById("root");
+      console.log(root);
+      // console.dir(root); //이것은 객체다. 또한 객체 안에 객체가 존재하고 있다. > 이거 근데 div 자체에 id 없을떄더 할당이 되는건가?
+      div.id = "root"; //id 재할당
+      console.dir(root);
+      // <div id="root"> 와  root.id = "container"; 는 작성법이 다를 뿐 뜻은 같다.
+      // window.console.log(container.tagname);
+      console.log(root.children[0].textContent);
+      root.children[0].textContent = "뭏녜"; //1. 값을 넣는다
+      root.children[1].textContent = "아";
+      root.children[2].textContent = "아";
+      // root.childNodes[1]. = "김"; => child nodes로는 안되는지? 나중에
+      // for (let i=0; i<root length; index++) {}
+      let moon = "문혜림";
+      root.children[0].textContent = moon; //2. 변수 만들어 할당  두 방법중에 편한거 써라
+      let arr = ["배성빈", "신지윤", "김인티"];
+      console.log(arr);
+      for (let i = 0; i < arr.length; i++) {
+        root.children[i].textContent = arr[i];
+      }
+      // for (var index = 0; index < 3; index++) {
+      //   if (arr[index] === "배성빈") {
+      //     arr[index] = "이종수";
+      //   }
+      //   root.children[index].innerHTML = arr[index];
+      // }
+    </script>
+  </body>
+</html>

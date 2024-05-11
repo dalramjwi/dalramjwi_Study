@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p></p>
+    <button>ads</button>
+    <script>
+      names = [
+        "구하림",
+        "김보미",
+        "김수현",
+        "김정수",
+        "문혜림",
+        "배성빈",
+        "백지원",
+        "송이현",
+      ];
+
+      let namesIndex = 0;
+
+      let test = document.querySelector("p");
+      console.log(test.innerHTML);
+
+      names.forEach((element) => {
+        if (element == `구하림`) {
+          console.log(test);
+          console.log(element);
+          test.innerHTML = element;
+        }
+      });
+
+      document.querySelector(`button`).onclick = () => {
+        // document.querySelector(div).textContent = ``;
+        names.forEach((element) => {
+          if (element == `구하림`) {
+            console.log(test);
+            console.log(element);
+            test.innerHTML = "";
+          }
+        });
+        test.innerHTML = names[1];
+      };
+
+      const testName = names.map((element) => {
+        return element;
+      });
+
+      console.log(testName);
+      testName.push(`asd`);
+      console.log(testName);
+      console.log(names);
+    </script>
+  </body>
+</html>

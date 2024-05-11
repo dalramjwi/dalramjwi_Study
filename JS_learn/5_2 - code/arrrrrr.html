@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [];
+      let b = ["공욱재", "김수현", "김현수"];
+      let c = "김정수";
+
+      function make(array, item, index) {
+        let a = [];
+        function judge(present) {
+        for (let i = 0; i < array.length; i++) {
+          if (i === index) {
+            a[i] = item;
+          } else if (judge(i) === true) {
+            a[i + 1] = array[i];
+          } else {
+            a[i] = array[i];
+          }
+        }
+        return a;
+      }
+    </script>
+  </body>
+</html>

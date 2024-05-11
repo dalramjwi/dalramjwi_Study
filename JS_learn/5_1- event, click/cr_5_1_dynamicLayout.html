@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="place"></div>
+    <script>
+      // div root,place 변수 지정
+      let root = document.getElementById("root");
+      let place = document.getElementById("place");
+      // gray와 white div 만들어주고 생성해줘, id도 지정해줘
+      let gray = document.createElement("div");
+      gray.id = "gray";
+      root.append(gray);
+      let white = document.createElement("div");
+      white.id = "white";
+      root.append(white);
+      //버튼 만들어줘
+      let btn = document.createElement("button");
+      btn.id = "btn";
+      place.append(btn);
+      console.dir(btn);
+      btn.textContent = "없애기";
+      // body 스타일링 기본
+      let body = document.body;
+      body.style.margin = "0";
+      body.style.overflowX = "hidden";
+      // gray와 white 스타일링 - dt 기준
+      gray.style.width = "100vw";
+      gray.style.height = "50vh";
+      gray.style.background = "gray";
+      gray.style.position = "absolute";
+      gray.style.zIndex = "1";
+      white.style.width = "100vw";
+      white.style.height = "100vh";
+      white.style.position = "absolute";
+      white.style.zIndex = "0";
+      white.style.background = "rgb(240,240,240)";
+      //버튼 위치 강제 조정
+      btn.style.position = "absolute";
+      btn.style.top = "5px";
+      btn.style.zIndex = "2";
+      btn.style.background = "rgb(70,70,70)";
+      btn.style.color = "white";
+      btn.style.borderRadius = "10px";
+      btn.style.width = "80px";
+      btn.style.height = "80px";
+      //버튼 누르면 gray 없애줘
+      btn.addEventListener("click", hide);
+      let i = 1;
+
+      function hide() {
+        if (i % 2 == 0) {
+          gray.style.display = "block";
+          btn.textContent = "";
+          btn.textContent = "없애기";
+          i = i + 1;
+        } else {
+          gray.style.display = "none";
+          btn.textContent = "";
+          btn.textContent = "나타내기";
+          i = i + 1;
+        }
+
+        console.log(i);
+      }
+      //사이즈 조정해줘
+      function size() {
+        if (matchMedia("screen and (max-width: 430px)").matches) {
+          gray.style.width = "90vw";
+          gray.style.height = "100vh";
+          console.log("모바일화면");
+        } else if (matchMedia("screen and (max-width: 1024px)").matches) {
+          gray.style.width = "40vw";
+          gray.style.height = "100vh";
+          console.log("태블릿 화면");
+        } else if (matchMedia("screen and (max-width: 1728px)").matches) {
+          gray.style.width = "100vw";
+          gray.style.height = "50vh";
+          console.log("데스크탑 화면");
+        }
+      }
+
+      window.addEventListener("resize", size);
+    </script>
+  </body>
+</html>

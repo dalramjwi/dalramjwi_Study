@@ -1,0 +1,1890 @@
+/* 전체 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: Noto Sans Korean;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+  margin: auto;
+}
+div {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+/* 공통 크기 */
+h1 {
+  font-size: 56px;
+  color: rgb(134, 134, 139);
+}
+h2 {
+  font-size: 62.03px;
+}
+h3 {
+  font-size: 20.67px;
+}
+h4 {
+  font-size: 17.23px;
+}
+h5 {
+  font-size: 80px;
+}
+/* 할당 */
+:root {
+  /* backgroundcolor */
+  --bgc: rgb(16, 16, 16);
+  /* buttonlayout 1_background*/
+  --btn1_bgc: rgb(51, 51, 53);
+  /* button1layout 1_border-radius */
+  --btn1_brr: 50px;
+  /* button 1_div_background */
+  --btn1_dbgc: rgb(0, 113, 227);
+  /* button 1_div_border-radius */
+  --btn1_div_brr: 100px;
+  /* a_color */
+  --aclr: rgb(41, 151, 255);
+}
+/* aside-국적 */
+aside:first-child {
+  background-color: rgb(240, 240, 242);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+aside > div {
+  display: flex;
+  height: auto;
+  align-items: center;
+  gap: 0.5vw;
+  width: 60%;
+}
+aside:first-child > div {
+  background-color: rgb(240, 240, 242);
+  color: black;
+}
+aside:first-child > div > p {
+  width: 28vw;
+  flex-grow: 1;
+}
+aside > div > select {
+  flex-grow: 0.9;
+  width: 1.2vw;
+  height: 3.2vh;
+}
+aside > div > button {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  flex-grow: 0.03;
+}
+aside > div > div {
+  flex-grow: 0.03;
+  background: rgb(240, 240, 242);
+  color: black;
+}
+aside > div > div > a {
+  text-decoration: none;
+}
+
+/* nav 부분 */
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  align-items: center;
+  font-size: 15px;
+}
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/* aside-구매안내문 */
+aside:last-child {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: rgb(17, 17, 17);
+}
+aside:last-child > div {
+  background-color: rgb(17, 17, 17);
+  width: 40%;
+}
+aside:last-child p > a {
+  color: var(--aclr);
+}
+
+/* 아이폰 메인 */
+section:first-child > img {
+  margin-left: 8vw;
+  border: 1px solid black;
+}
+main > section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > section:first-child > p:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  height: 2vh;
+  justify-content: center;
+  color: rgb(190, 184, 174);
+  font-weight: bolder;
+  margin-top: 20vh;
+}
+main > section:first-child > div {
+  display: flex;
+  height: 24vh;
+  align-items: flex-end;
+}
+main > section:first-child > div > div {
+  display: flex;
+  flex-direction: column;
+  height: 3vw;
+  background-color: var(--btn1_dbgc);
+  width: 5vw;
+  justify-content: center;
+  border-radius: 15px;
+  height: 3.5vh;
+}
+main > section:first-child > div > div > a {
+  color: white;
+  text-decoration: none;
+}
+main > section:first-child > p:last-child {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  height: 10vh;
+  margin-top: 3.5vh;
+}
+/* 소개핵심 */
+main > section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(17, 17, 17);
+  justify-content: space-around;
+  position: relative;
+}
+main > section:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+}
+main > section:nth-child(2) > div > div:first-child {
+  display: flex;
+  flex-direction: row;
+  gap: 30vw;
+  background-color: rgb(17, 17, 17);
+}
+main > section:nth-child(2) > div > div:first-child > div > a {
+  color: var(--btn1_dbgc);
+  text-decoration: none;
+}
+main > section:nth-child(2) > div > div:first-child > div {
+  background-color: rgb(17, 17, 17);
+  margin-top: 7vh;
+}
+main > section:nth-child(2) > div > div:nth-child(2) {
+  display: flex;
+  width: 63vw;
+  height: 60vh;
+  border-radius: 50px;
+  margin-bottom: 14vh;
+}
+main > section:nth-child(2) > div > div:nth-child(2) > p {
+  text-align: left;
+  margin-left: -96vh;
+  margin-top: -42vh;
+  font-weight: bold;
+  line-height: 2.8vh;
+}
+main > section:nth-child(2) > div:nth-of-type(2) {
+  background-color: black;
+  position: absolute;
+  left: 85vw;
+  width: 15vw;
+  height: 60.5vh;
+  top: 21vh;
+  border-radius: 50px;
+}
+main > section:nth-child(2) > div:nth-of-type(2) > span {
+  text-align: left;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: auto;
+  margin-bottom: 34vh;
+}
+main > section:nth-child(2) > div:nth-of-type(2) > span > p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 28px;
+}
+main > section:nth-child(2) > div:nth-of-type(3),
+main > section:nth-child(2) > div:nth-of-type(4) {
+  position: absolute;
+}
+main > section:nth-child(2) > div:nth-of-type(3) {
+  top: 22vh;
+  left: 45vw;
+}
+main > section:nth-child(2) > div:nth-of-type(4) {
+  top: 22vh;
+  left: 55vw;
+}
+/* 보다 자세히 */
+.look {
+  height: 92vh;
+  padding-bottom: 10vh;
+}
+.look > div {
+  padding: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.look > div > h1 {
+  display: flex;
+  justify-content: left;
+}
+.look > div > img:first-of-type {
+  margin: 5vh 0;
+}
+.look > div > p {
+  font-size: 10.69px;
+}
+.look > div > img:last-of-type {
+  z-index: 1;
+  position: relative;
+}
+.look > div > p > span {
+  text-decoration: underline;
+}
+.look > div > div {
+  position: relative;
+}
+.look > div > div > div {
+  background-color: rgb(66, 66, 69);
+  width: 12vw;
+  height: 5.5vh;
+  position: absolute;
+  left: 34vw;
+  bottom: 0.5vh;
+  border-radius: 30px;
+}
+/* 탐구해보기 */
+
+.search {
+  background-color: rgb(17, 17, 17);
+}
+.search > div:first-child {
+  height: 0vh;
+  padding-left: 8vw;
+  background-color: rgb(17, 17, 17);
+}
+.search > div > h1 {
+  height: 45vh;
+  padding-top: 2vh;
+  background-color: rgb(17, 17, 17);
+  align-items: center;
+  display: flex;
+}
+.search > div:nth-child(2) {
+  background-color: rgb(17, 17, 17);
+  padding: 11vw;
+  padding-left: 18vw;
+  padding-bottom: 13vh;
+  height: 45vh;
+}
+.search > div:nth-child(2) > div {
+  height: 20vh;
+  background-color: rgb(17, 17, 17);
+  padding-left: 3vw;
+  margin-top: 25vh;
+}
+.search > div:nth-child(2) > div > h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+  margin-left: 3vw;
+}
+.search > div:nth-child(3) {
+  background-color: rgb(17, 17, 17);
+  padding-right: 12vw;
+  padding-left: 12vw;
+  display: flex;
+  flex-direction: column;
+}
+.search > div:nth-child(3) > div {
+  background-color: rgb(17, 17, 17);
+  display: flex;
+}
+
+.search > div:nth-child(3) > div > img:first-child {
+  padding-top: 1vw;
+  background-color: rgb(17, 17, 17);
+}
+.search > div:nth-child(3) > div > img:nth-child(2) {
+  padding-left: 1vw;
+  padding-top: 1vw;
+}
+.search > div:nth-child(3) > div > div:first-child > h4 {
+  padding-left: 5vw;
+  padding-right: 3vw;
+  background-color: rgb(17, 17, 17);
+  margin: 4vh -29px 2vw 0px;
+}
+.search > div:nth-child(3) > div > div > h4 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  text-align: left;
+  padding-left: 10vw;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+  line-height: 1.5vw;
+}
+.search > div:nth-child(3) > div > div > h4 > span {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.search > div:nth-child(3) > div > h3 {
+  background-color: rgb(17, 17, 17);
+}
+
+.search > div:nth-child(3) > div > div > h3 {
+  font-size: 20.67px;
+  text-align: left;
+  padding-left: 8vw;
+  padding-right: 5vw;
+  font-weight: bold;
+  color: rgb(134, 134, 139);
+  line-height: 1.75vw;
+  margin: 5vh 0 0 0;
+}
+.search > div:nth-child(3) > div > div > h3 > span {
+  color: white;
+  font-weight: bold;
+}
+.search > div:nth-child(3) > div:last-child {
+  width: 40vh;
+  margin-top: 9vh;
+  margin-bottom: 13vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+}
+.search > div:nth-child(3) > div:last-child > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.search > div:nth-child(3) div {
+  background-color: rgb(17, 17, 17);
+}
+.fa-circle-plus {
+  color: var(--btn1_dbgc);
+}
+/* 프로세서 소개 */
+.intro > div > h2:first-of-type {
+  margin-bottom: 0;
+}
+.intro > div > h2:last-of-type {
+  margin-top: 3vh;
+}
+
+.intro > div > div:first-child > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 5vh;
+}
+.intro > div > div:first-child {
+  margin: auto;
+  width: 17vw;
+  margin-top: 10vh;
+  margin-bottom: 9vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+}
+.intro > div > p {
+  font-size: 22.64px;
+  letter-spacing: -0.5px;
+}
+
+/* 버튼레이아웃 */
+.intro > div > img:last-of-type {
+  width: 56vw;
+}
+.intro > div > p {
+  color: rgb(134, 134, 139);
+  padding-bottom: 5vh;
+  font-weight: bold;
+}
+.intro > div > figcaption {
+  color: rgb(134, 134, 139);
+}
+.intro > div > section {
+  display: flex;
+  margin-top: 4vh;
+}
+.intro > div > section > section {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding-left: 28vw;
+}
+.intro > div > section > section > div {
+  text-align: left;
+}
+.intro > div > section > section > div > p {
+  color: rgb(134, 134, 139);
+  font-size: 18.21px;
+  font-weight: bold;
+  line-height: 3.2vh;
+}
+.intro > div > section > section > div > p > span {
+  color: white;
+  font-weight: bold;
+}
+.intro > div > section > section > div:nth-child(2) > p {
+  font-size: 21px;
+}
+.intro > div > section > div {
+  padding-left: 9vw;
+}
+.intro > div > section > div > p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.intro > div > section > div > p > span {
+  color: white;
+  font-size: 42.94px;
+  font-weight: bold;
+}
+.intro > div > section > div > p > span:first-child,
+.intro > div > section > div > p > span:last-child {
+  color: rgb(134, 134, 139);
+  font-size: 21px;
+}
+/* 카메라 소개 */
+.camera > div > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 5vh;
+}
+.camera > div:first-child {
+  margin: auto;
+  width: 12vw;
+  margin-top: 25vh;
+  margin-bottom: 16vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+}
+.camera > section {
+  display: flex;
+  flex-direction: column;
+}
+.camera > section > div:first-child {
+  text-align: left;
+  margin-left: 20vw;
+}
+.camera > section > div:first-child > h5 {
+  margin-bottom: 3vh;
+  letter-spacing: -0.2vw;
+}
+.camera > section > div:first-child > p {
+  color: rgb(134, 134, 139);
+  margin-top: 0;
+}
+.camera > section > div:last-child > p {
+  color: rgb(134, 134, 139);
+  text-align: left;
+  padding-left: 16vw;
+}
+.camera > section > div:last-child {
+  margin-bottom: 10vh;
+}
+.camera > section > div > p:first-of-type {
+  font-size: 28px;
+  font-weight: bold;
+}
+.camera > section > div:last-child > img {
+  position: relative;
+  z-index: 1;
+}
+.camera > section > div:last-child {
+  position: relative;
+}
+.camera > section > div:last-child > p {
+  position: relative;
+  z-index: 2;
+  font-size: 19px;
+  top: -5vw;
+  left: 6vw;
+}
+/* 카메라 예시 */
+.cameraex {
+  overflow: hidden;
+}
+.cameraex > section {
+  position: relative;
+  left: 20vw;
+}
+.cameraex > section > p {
+  padding-left: 16vw;
+  text-align: left;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+  line-height: 1.5vw;
+  padding-bottom: 2vw;
+}
+.cameraex > section > p > span {
+  color: white;
+}
+.cameraex > section > section > div:first-child > span {
+  color: rgb(134, 134, 139);
+}
+.cameraex > section > section {
+  display: flex;
+  margin: 1vw;
+  gap: 14.5vw;
+  padding-left: 26vw;
+  margin-bottom: 8vw;
+}
+
+.cameraex > section > section > div {
+  display: flex;
+  gap: 0.5vw;
+  font-size: 19px;
+  font-weight: bold;
+}
+.cameraex > section > section > div:nth-child(2) > div {
+  background-color: rgba(134, 134, 139, 0.25);
+  border-radius: 40px;
+  width: 1.6vw;
+  height: 3.1vh;
+}
+.cameraex > section > section > div:nth-child(2) > div:last-child {
+  background-color: rgb(51, 51, 54);
+  border-radius: 40px;
+  width: 1.6vw;
+  height: 3.1vh;
+}
+.cameraex > div {
+  display: grid;
+  grid-template-columns: 0.4fr 0.5fr 0.07fr 0.43fr 0.4fr;
+  grid-template-rows: 0.3fr 0.4fr 0.6fr 0.3fr;
+}
+.cameraex > div > img {
+  grid-row: 1/5;
+  grid-column: 2/3;
+  justify-self: end;
+  border-radius: 20px;
+}
+.cameraex > div > div {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  text-align: left;
+}
+.cameraex > div > div > p {
+  color: rgb(134, 134, 139);
+  font-size: 20.18px;
+  font-weight: bold;
+  line-height: 1.7vw;
+  letter-spacing: -0.03vw;
+}
+.cameraex > div > div > p > span {
+  color: rgb(255, 255, 255);
+}
+
+.cameraex > div > div:last-child {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  text-align: left;
+}
+.cameraex > div > div:last-child > p {
+  font-size: 18.05px;
+}
+.cameraex > div:last-child {
+  width: 55vw;
+  height: 0.125vh;
+  background-color: rgb(66, 66, 69);
+  margin: auto;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+}
+.cameraex > section > section > div:nth-child(2) > div:first-child > a {
+  color: rgba(255, 255, 255, 0.4);
+}
+.cameraex > section > section > div:nth-child(2) > div:last-child > a {
+  color: rgb(255, 255, 255);
+}
+/* 줌 소개 */
+.zoom {
+  margin-bottom: 19vh;
+}
+.zoom > p {
+  font-size: 40px;
+  letter-spacing: 0.05vw;
+  font-weight: bold;
+  letter-spacing: -0.05vw;
+}
+.zoom > div:nth-of-type(1) {
+  margin: auto;
+  width: 10vw;
+  margin-top: 20vh;
+  margin-bottom: 15vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+}
+.zoom > div > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+  line-height: 5vh;
+}
+.zoom > div:nth-of-type(2) > img {
+  display: block;
+  margin: auto;
+}
+.zoom > div:nth-of-type(2) > div > button {
+  display: inline-block;
+}
+.zoom > div:nth-of-type(2) > div > div {
+  display: inline-block;
+}
+.zoom > div:nth-of-type(2) > div > button {
+  background-color: black;
+  color: rgb(134, 134, 139);
+  border-style: none;
+  padding: 1vh;
+}
+.zoom > div:nth-of-type(2) > div > div {
+  color: rgb(134, 134, 139);
+}
+.zoom > div > section {
+  display: flex;
+  height: 40vh;
+}
+.zoom > div > section > div:first-child {
+  width: 15vw;
+  margin-left: 30vw;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.5vw;
+}
+.zoom > div > section > div:last-child {
+  width: 15vw;
+  margin-left: 9.5vw;
+  text-align: left;
+}
+.zoom > div > section > div:last-child > p:first-child {
+  font-size: 48px;
+  display: inline;
+  height: 0vh;
+  vertical-align: text-top;
+  font-weight: bolder;
+}
+.zoom > div > section > div:last-child > p:last-child {
+  font-size: 21px;
+  color: rgb(134, 134, 139);
+  margin-top: 0.5vh;
+  display: inline-block;
+  font-weight: bold;
+}
+.zoom > div > section > div:first-child > p {
+  display: inline-block;
+  color: rgb(134, 134, 139);
+}
+.zoom > div > section > div:first-child > p > span {
+  color: white;
+}
+.zoom > div:nth-of-type(2) > div {
+  height: 8vh;
+}
+/* 즐겨쓰는 동작 */
+.act > div:first-child {
+  width: 43%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 4vw;
+}
+.act > div:nth-child(2) {
+  width: 65%;
+  margin: auto;
+  display: flex;
+}
+
+.act > div:nth-child(2) > div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+.act > div:nth-child(2) > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.act > div:nth-child(2) > div:first-child > div > p {
+  color: rgb(134, 134, 139);
+  text-align: left;
+  margin-right: 0.5vw;
+  font-size: 21px;
+  margin-bottom: 2.5vw;
+  font-weight: bold;
+  line-height: 1.65vw;
+  margin-top: 5vw;
+}
+.act > div:nth-child(2) > div:first-child > div > div:nth-of-type(1) {
+  width: 23.5vw;
+  height: 0.15vh;
+  background-color: rgba(134, 134, 139, 0.45);
+  margin: 0;
+}
+.act > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+.act > div:nth-child(2) > div:first-child > div > p > span {
+  color: white;
+}
+.act > div:nth-child(2) > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+}
+.act > div:nth-child(2) > div:first-child > div > div:nth-of-type(2) > ul {
+  text-align: left;
+  list-style-type: none;
+  display: inline;
+  font-size: 14px;
+  line-height: 1.3vw;
+}
+.act
+  > div:nth-child(2)
+  > div:first-child
+  > div
+  > div:nth-of-type(2)
+  > ul
+  > li
+  > div {
+  display: inline-block;
+  width: 3vw;
+  background-color: rgba(0, 0, 0, 0);
+}
+.act > div:nth-child(2) > div:first-child > div > div:nth-of-type(2) > ul > li {
+  margin: 0.4vw;
+}
+.act
+  > div:nth-child(2)
+  > div:first-child
+  > div
+  > div:nth-of-type(2)
+  > ul
+  > li:first-child {
+  border: 0.1px solid white;
+  border-radius: 50px;
+  padding: 0.25vw;
+  padding-left: 0;
+}
+.act
+  > div:nth-child(2)
+  > div:first-child
+  > div
+  > div:nth-of-type(2)
+  > ul
+  > li:not(:first-child)
+  > div {
+  color: rgb(134, 134, 139);
+}
+.act
+  > div:nth-child(2)
+  > div:first-child
+  > div
+  > div:nth-of-type(2)
+  > ul
+  > li:not(:first-child) {
+  color: rgb(134, 134, 139);
+}
+/* ?.act > div:nth-child(2) > div:first-child > div > div {
+  margin-bottom: 5vw;
+} 나중에
+ */
+
+.act > div:nth-child(2) > div:first-child > div > p:nth-of-type(2) {
+  font-size: 17.55px;
+}
+.act > div:nth-child(2) > div:nth-of-type(2) > div > p {
+  font-size: 16.57px;
+  text-align: left;
+  color: rgb(134, 134, 139);
+  line-height: 1.55vw;
+  font-weight: bold;
+}
+.act > div:nth-child(2) > div:nth-of-type(2) > div > p > span {
+  color: white;
+}
+.act > div:last-of-type {
+  margin: auto;
+  width: 10vw;
+  margin-top: 3vh;
+  margin-bottom: 9vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+  margin-right: 49vw;
+}
+.act > div:last-of-type > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 5vh;
+}
+/* 전송속도 */
+.speed > h5 {
+  text-align: left;
+  margin-left: 27.5vw;
+  margin-bottom: 5vw;
+}
+.speed > div > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+.speed > div > section > div > p {
+  text-align: left;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+  line-height: 1.5vw;
+}
+.speed > div > section > div:nth-of-type(2) > p {
+  text-align: left;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+  line-height: 1.4vw;
+}
+.speed > div > section > div > p > span {
+  color: white;
+}
+.speed > div > section > div > p:first-of-type > span:first-of-type {
+  color: rgb(134, 134, 139);
+  text-decoration: underline;
+}
+.speed > div > section > div > p:nth-of-type(1) {
+  font-size: 16.24px;
+}
+.speed > div > section > div > p:nth-of-type(2) {
+  font-size: 16.9px;
+}
+.speed > div > section > div:nth-of-type(2) > p:first-child,
+p:nth-child(3) {
+  font-size: 21px;
+}
+.speed > div > section > div:nth-of-type(2) > p:nth-child(2) {
+  font-size: 48px;
+  font-weight: bold;
+}
+.speed > div > section > div:nth-of-type(2) > p {
+  font-weight: bold;
+}
+.speed > div > section > div:nth-of-type(2) > p:last-of-type > span {
+  text-decoration: underline;
+  color: rgb(134, 134, 139);
+}
+.speed > div > section > div:nth-child(2) > p:last-of-type {
+  font-size: 16.57px;
+  font-weight: normal;
+}
+.speed > div:first-of-type {
+  height: 144vh;
+}
+.speed > div > section {
+  height: 37vh;
+}
+/* 배터리 속도 */
+.battery > h5 {
+  margin-bottom: 2vw;
+  text-align: center;
+  margin-top: 15vw;
+  letter-spacing: -0.1vw;
+}
+.battery > p {
+  font-size: 22.53px;
+  font-weight: 600;
+  color: rgb(134, 134, 139);
+  letter-spacing: -0.03vw;
+  margin-bottom: 5vw;
+  line-height: 2vw;
+}
+.battery > div > img {
+  border-radius: 50px;
+}
+.battery > div > div:nth-last-of-type(1) {
+  margin: 1vw;
+}
+.battery > div > div:nth-of-type(1) > a {
+  color: rgb(134, 134, 139);
+  text-decoration: none;
+}
+.battery > div > section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 7vw;
+}
+.battery > div > section > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: baseline;
+}
+.battery > div > section > div:nth-of-type(1) > p,
+h5 {
+  margin: 0.5vw;
+  text-align: left;
+}
+.battery > div > section > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: baseline;
+  gap: 1vw;
+}
+.battery > div > section > div:nth-of-type(1) > p {
+  color: rgb(134, 134, 139);
+  font-weight: 600;
+  font-size: 21px;
+}
+.battery > div > section > div:nth-of-type(1) > p > span {
+  text-decoration: underline;
+}
+.battery > div > section > div:nth-of-type(1) > h5 {
+  margin-right: 5vw;
+}
+.battery > div > section > div:nth-child(2) > p:first-child {
+  font-size: 22.86px;
+  margin-top: 6.5vw;
+}
+.battery > div > section > div:nth-child(2) > p:first-child > span:first-child {
+  color: white;
+}
+.battery
+  > div
+  > section
+  > div:nth-child(2)
+  > p:first-child
+  > span:nth-of-type(2) {
+  text-decoration: underline;
+}
+.battery > div > section > div:nth-child(2) > p {
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+}
+.battery > div > section > div:nth-child(2) > div:nth-of-type(1) {
+  background-color: rgb(134, 134, 139);
+  width: 20vw;
+  height: 0.1vh;
+  margin-top: 2vw;
+}
+.battery > div > section > div:nth-child(2) > div:nth-of-type(2) {
+  display: flex;
+  align-items: baseline;
+}
+.battery > div > section > div:nth-child(2) > div:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4vw;
+}
+.battery
+  > div
+  > section
+  > div:nth-child(2)
+  > div:nth-of-type(2)
+  > div:nth-of-type(1) {
+  color: rgb(134, 134, 139);
+  width: 4vw;
+}
+.battery
+  > div
+  > section
+  > div:nth-child(2)
+  > div:nth-of-type(2)
+  > div:nth-of-type(2)
+  > p {
+  color: rgb(134, 134, 139);
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+}
+.battery
+  > div
+  > section
+  > div:nth-child(2)
+  > div:nth-of-type(2)
+  > div:nth-of-type(2)
+  > div
+  > p {
+  color: rgb(134, 134, 139);
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 2.5vw;
+}
+/* 기타 부가 설명 */
+/* 첫번째 */
+.exam > article:first-child > section > img:nth-of-type(1) {
+  margin: 0;
+}
+.exam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6vw;
+}
+.exam > article:first-child {
+  margin-top: 18vh;
+  position: relative;
+}
+.exam > article:first-child > section > p:first-child {
+  font-weight: bold;
+  font-size: 64px;
+  position: absolute;
+  left: 6.5vw;
+  text-align: left;
+  top: 2vw;
+}
+.exam > article:first-child > section > div {
+  background-color: rgb(16, 16, 16);
+  text-align: center;
+  margin: auto;
+  width: 58.3vw;
+}
+.exam > article:first-child > section > div > div {
+  text-align: left;
+  display: inline-block;
+  line-height: 1.5vw;
+  font-weight: bold;
+}
+.exam > article:first-child > section > div > div > p {
+  color: rgb(134, 134, 139);
+  margin-top: 2.5vw;
+}
+.exam > article:first-child > section > div > div > p > span {
+  color: white;
+}
+.exam > article:first-child > section > div > div > p > span:last-child {
+  text-decoration: underline;
+}
+.exam > article:first-child > section > div > div > div {
+  margin: auto;
+  width: 16vw;
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+}
+.exam > article:first-child > section > div > div > div > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 5vh;
+}
+.exam > article:first-child > section > div > div {
+  background-color: rgb(16, 16, 16);
+}
+.exam > article:first-child > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(16, 16, 16);
+  width: 58.3vw;
+}
+/* 두번째 */
+.exam > article:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+}
+.exam > article:nth-of-type(2) > div {
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: column;
+  width: 58.3vw;
+}
+.exam > article:nth-of-type(2) > div > div {
+  width: 47vw;
+  margin-top: 6vw;
+  margin-bottom: 2vw;
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
+}
+.exam > article:nth-of-type(2) > div > div > div {
+  display: flex;
+  background-color: rgb(16, 16, 16);
+  gap: 1.5vw;
+  align-self: baseline;
+}
+.exam > article:nth-of-type(2) > div > div > div > div {
+  background-color: rgb(16, 16, 16);
+}
+.exam > article:nth-of-type(2) > div > div > p:first-of-type {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  margin-bottom: 4vh;
+  align-self: baseline;
+  letter-spacing: -0.3vw;
+}
+.exam > article:nth-of-type(2) > div > div > div:nth-of-type(2) {
+  width: 43vw;
+  height: 0.25px;
+  background-color: rgb(66, 66, 69);
+  margin-bottom: 3vh;
+}
+.exam > article:nth-of-type(2) > div > div > div:nth-of-type(3) {
+  display: flex;
+  background-color: rgb(16, 16, 16);
+  gap: 4vw;
+  font-weight: bold;
+}
+.exam > article:nth-of-type(2) > div > div > div:nth-of-type(3) > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.exam > article:nth-of-type(2) > div > div > div > p:nth-of-type(1) {
+  font-size: 15.29px;
+  text-align: left;
+  color: rgb(134, 134, 139);
+  line-height: 1.35vw;
+}
+.exam > article:nth-of-type(2) > div > div > div > p:nth-of-type(1) > span {
+  color: white;
+}
+.exam > article:nth-of-type(2) > div > div > div > div > p:nth-of-type(1) {
+  font-size: 21px;
+  text-align: left;
+  color: rgb(134, 134, 139);
+  margin-bottom: 0;
+  line-height: 1.6vw;
+}
+.exam > article:nth-of-type(2) > div > div > div > div > p:nth-of-type(2) {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 0;
+  line-height: 2.5vw;
+}
+.exam > article:nth-of-type(2) > div > div > div > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 5vh;
+}
+.exam > article:nth-of-type(2) > div > div > div:last-of-type {
+  margin: auto;
+  width: 16vw;
+  margin-top: 7vh;
+  margin-bottom: 1vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+  margin-left: 14vw;
+}
+.exam > article:nth-of-type(3) > div > div > div > img:first-of-type {
+  margin-right: 1.5vw;
+}
+.exam > article:nth-of-type(3) > div > div > div > img:nth-of-type(3) {
+  margin-left: 1.5vw;
+}
+.fa-solid.fa-earth-americas.fa-3x {
+  color: rgb(1, 218, 88);
+}
+.fa-solid.fa-person.fa-3x {
+  color: rgb(1, 124, 253);
+}
+/* 세번째 */
+.exam > article:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+}
+.exam > article:nth-of-type(3) > div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(16, 16, 16);
+  width: 58.3vw;
+}
+.exam > article:nth-of-type(3) > div > div {
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  width: 53vw;
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.exam > article:nth-of-type(3) > div > div > div > p:first-child {
+  display: flex;
+  font-size: 49.75px;
+  text-align: left;
+  font-weight: bold;
+  color: rgb(134, 134, 139);
+}
+.exam > article:nth-of-type(3) > div > div > div > p:nth-child(2) {
+  text-align: left;
+  font-size: 49.75px;
+  font-weight: bold;
+}
+.exam > article:nth-of-type(3) > div > div > div {
+  background-color: rgb(16, 16, 16);
+  margin-bottom: 2vw;
+}
+.exam > article:nth-of-type(3) > div > div > div > p {
+  margin-left: -8vw;
+}
+.exam > article:nth-of-type(3) > div > div > div > div {
+  display: flex;
+  width: 51.5vw;
+  gap: 1.5vw;
+  background-color: rgb(16, 16, 16);
+  font-weight: bold;
+  line-height: 1.35vw;
+}
+.exam > article:nth-of-type(3) > div > div > div > div > p:nth-of-type(1) {
+  font-size: 15.73px;
+  width: 77vw;
+  text-align: left;
+  margin-left: 5.5vw;
+}
+.exam > article:nth-of-type(3) > div > div > div > div > p:nth-of-type(2) {
+  font-size: 15.14px;
+  width: 72vw;
+  text-align: left;
+}
+.exam > article:nth-of-type(3) > div > div > div > div > p:nth-of-type(3) {
+  font-size: 15.29px;
+  width: 95vw;
+  text-align: left;
+}
+.exam > article:nth-of-type(3) > div > div > div > div > p {
+  color: rgb(134, 134, 139);
+}
+.exam > article:nth-of-type(3) > div > div > div > div > p > span {
+  color: white;
+}
+.exam > article:nth-of-type(3) > div > div > div > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 5vh;
+}
+.exam > article:nth-of-type(3) > div > div > div:last-of-type {
+  margin: auto;
+  width: 17vw;
+  margin-top: 5vh;
+  margin-bottom: 9vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+  position: relative;
+}
+.exam > article:nth-of-type(3) > div > div > div:last-of-type > a > div {
+  display: inline-block;
+  width: 1.5vw;
+  background-color: var(--btn1_dbgc);
+  height: 2vh;
+}
+.exam
+  > article:nth-of-type(3)
+  > div
+  > div
+  > div:last-of-type
+  > div:last-of-type {
+  background-color: var(--btn1_dbgc);
+  width: 1.8vw;
+  height: 1.8vw;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 6px;
+  right: 12px;
+}
+.exam
+  > article:nth-of-type(3)
+  > div
+  > div
+  > div:last-of-type
+  > div:last-of-type
+  > a {
+  color: white;
+}
+/* 연동기기 */
+.device {
+  background-color: rgb(16, 16, 16);
+  height: 100vh;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.device > div {
+  width: 80vw;
+  background-color: rgb(16, 16, 16);
+}
+.device > div > div {
+  display: flex;
+  flex-direction: row;
+  padding: 1vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  border-radius: 30px;
+}
+.device > div > p {
+  font-size: 48px;
+  color: rgb(134, 134, 139);
+  text-align: left;
+  font-weight: bold;
+}
+.device > div > div > div > div {
+  border: 5vw;
+  width: 75vw;
+  font-weight: bold;
+}
+.device > div > div > div > div > ul,
+dd {
+  text-align: left;
+  line-height: 1.2vw;
+}
+.device > div > div > div > div > ul > dd {
+  margin-left: 0;
+}
+.device > div > div > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+.device > div > div > div:nth-of-type(2) {
+  display: flex;
+  width: 560vw;
+  height: 10vw;
+}
+.device > div > div > div > div > ul {
+  font-size: 25.16px;
+}
+.device > div > div > div > div > ul > dl > div {
+  display: inline;
+  color: rgb(134, 134, 139);
+  padding-left: 6vw;
+}
+.device > div > div > div > div > ul > dd {
+  font-size: 14.88px;
+  color: rgb(134, 134, 139);
+}
+.device > div > div > div > div > ul > div {
+  width: 21vw;
+  height: 0.1vh;
+  background-color: rgb(134, 134, 139);
+  margin-top: 2vw;
+}
+.device > div > div > div > div > ul > dl:nth-of-type(2) > div {
+  padding-left: 11vw;
+}
+.device > div > div > div > div > ul > dl:nth-of-type(3) > div {
+  padding-left: 9vw;
+}
+/* 결제관련 */
+.pay > div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(16, 16, 16);
+}
+
+.pay > div > div:first-child {
+  display: flex;
+  gap: 25vw;
+  height: 25vh;
+  background-color: rgb(16, 16, 16);
+  margin-bottom: -2.5vh;
+  margin-left: -2vw;
+}
+.pay > div > div:first-child > p {
+  font-size: 38.25px;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+}
+.pay > div > div:first-child > div > a {
+  color: var(--btn1_dbgc);
+  text-decoration: none;
+}
+.pay > div > div:nth-child(2) {
+  display: flex;
+  gap: 1.5vw;
+  margin-left: 12.5vw;
+  background-color: rgb(16, 16, 16);
+}
+.pay > div > div:nth-child(2) > article {
+  background-color: rgb(36, 36, 38);
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 20vw;
+  height: 20vw;
+}
+.pay > div > div:nth-child(2) > article > div {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 3vw;
+}
+.pay > div > div:nth-child(2) > article > div > div {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  margin-left: 15vw;
+}
+.pay > div > div:nth-child(2) > article > div > div > i {
+  color: white;
+}
+.pay > div > div:nth-child(2) > article > div > p:nth-of-type(1) {
+  color: rgb(245, 245, 247);
+  font-size: 24.39px;
+  text-align: left;
+}
+.pay > div > div:nth-child(2) > article > div > p:nth-of-type(2) {
+  font-size: 15.14px;
+  text-align: left;
+  margin-bottom: 3.5vw;
+}
+.pay > div > div:nth-child(2) > article:nth-child(2) > div > p:nth-of-type(2) {
+  margin-bottom: 7.4vw;
+}
+.pay > div > div:nth-child(2) > article:nth-child(3) > div > p:nth-of-type(2) {
+  margin-bottom: 7.4vw;
+}
+.pay > div > div:nth-child(2) > article:nth-child(4) > div > p:nth-of-type(2) {
+  margin-bottom: 4.8vw;
+}
+.pay > div > div:last-child {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75vw;
+  background-color: rgb(16, 16, 16);
+  margin: 2vw;
+  margin-left: 59vw;
+}
+.pay > div > div:last-child > div {
+  background-color: rgba(134, 134, 139, 0.5);
+  border-radius: 10px;
+  width: 1.4vw;
+  height: 2.5vh;
+}
+.pay > div > div:last-child > div:first-child {
+  background-color: rgba(134, 134, 139, 0.3);
+}
+.pay > div > div:first-child > div {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* 타모델 */
+.model > div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(16, 16, 16);
+  padding-top: 2vw;
+}
+.model > div > div:first-child {
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  gap: 30vw;
+}
+.model > div > div:first-child > p {
+  font-size: 38px;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+}
+.model > div > div:first-child > div > a {
+  font-size: 21px;
+  color: var(--aclr);
+  text-decoration: none;
+  background-color: rgb(16, 16, 16);
+}
+.model > div > div:nth-child(2) > div > div {
+  width: 70vw;
+  display: flex;
+  padding-top: 10vh;
+  gap: 5vw;
+}
+.model > div > div:nth-child(2) > div:nth-child(2) {
+  background-color: rgb(66, 66, 69);
+  width: 39vw;
+  height: 0.1vh;
+  margin-top: 3vh;
+}
+.model > div > div:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+.model > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  border-radius: 30px;
+}
+.model > div > div:nth-child(2) > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 2vw;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div
+  > div:nth-of-type(2)
+  > div:nth-of-type(2) {
+  margin-bottom: -7px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:first-child {
+  height: 38vh;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > p:first-of-type {
+  font-size: 25.7px;
+}
+.model > div > div:nth-child(2) {
+  border-radius: 30px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > p:nth-of-type(2) {
+  font-size: 17px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div:nth-of-type(2)
+  > p:nth-of-type(2) {
+  font-size: 17px;
+  margin-top: 0.59vh;
+  margin-bottom: 2.8vh;
+}
+
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3) {
+  display: inline-block;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3)
+  > p {
+  display: inline-block;
+  color: rgb(134, 134, 139);
+  font-size: 17px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3)
+  > div {
+  display: inline-block;
+  color: var(--aclr);
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div:nth-of-type(2)
+  > p:nth-of-type(1) {
+  font-size: 25.92px;
+  height: 5vh;
+  margin-bottom: 0;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3)
+  > div {
+  font-size: 17px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3)
+  > div
+  > div {
+  background-color: var(--btn1_bgc);
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3)
+  > div:first-child {
+  background-color: rgb(0, 113, 227);
+  width: 12vh;
+  height: 3.8vh;
+  border-radius: 50px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-of-type(1)
+  > div
+  > div:nth-of-type(3)
+  > div:first-child
+  > a {
+  color: white;
+  line-height: 3.8vh;
+}
+.model > div > div:nth-child(2) > div:nth-child(3) > div > p:nth-of-type(1) {
+  font-size: 28px;
+}
+.model > div > div:nth-child(2) > div:nth-child(3) > div > p:nth-of-type(2) {
+  font-size: 28px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > p:nth-of-type(2)
+  > span {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 2.4vh;
+}
+.model > div > div:nth-child(2) > div:nth-child(3) > div > p:nth-of-type(4) {
+  font-size: 21.66px;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > p:nth-of-type(3)
+  > span {
+  text-decoration: underline;
+}
+.model > div > div:nth-child(2) {
+  margin-bottom: 5vh;
+  padding-bottom: 5vh;
+}
+.model > div:last-child > div {
+  margin: auto;
+  width: 13.5vw;
+  margin-top: 10vh;
+  margin-bottom: 9vh;
+  background-color: var(--btn1_bgc);
+  border-radius: 30px;
+  height: 5vh;
+}
+.model > div:last-child > div > a > div {
+  background-color: var(--btn1_dbgc);
+  display: inline-block;
+  width: 1.3vw;
+  height: 2.5vh;
+  line-height: 2.5vh;
+  border-radius: 20px;
+}
+.model > div:last-child > div > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 5vh;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div
+  > div:nth-of-type(1)
+  > div:nth-of-type(2)
+  > img {
+  height: 3.7vh;
+  width: 5.5vw;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div
+  > div:nth-of-type(1)
+  > div:nth-of-type(2) {
+  height: 1vh;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div
+  > div:nth-of-type(2)
+  > div:nth-of-type(2)
+  > img {
+  height: 3.5vh;
+  width: 6.8vw;
+}
+.model
+  > div
+  > div:nth-child(2)
+  > div
+  > div
+  > div:nth-of-type(2)
+  > div:nth-of-type(2) {
+  height: 1vh;
+}
+/* 바닥글 */
+.list > div {
+  padding: 7vw;
+  padding-left: 10vw;
+}
+.list > div > p {
+  font-size: 44.06px;
+  color: rgb(134, 134, 139);
+  font-weight: bold;
+  text-align: left;
+}
+.list > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.list > div > div > ul {
+  font-size: 12px;
+  color: rgb(110, 110, 115);
+  text-align: left;
+}
+.list > div > div > ul:first-of-type {
+  padding-left: 0;
+}
+
+.list > div > div > ul > li {
+  list-style-type: none;
+  text-align: left;
+  color: white;
+}
+.list > div > div > ul:first-of-type > li:first-of-type {
+  font-size: 28px;
+
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(2) {
+  font-size: 25.7px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(3) {
+  font-size: 25.92px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(4) {
+  font-size: 25.81px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(5) {
+  font-size: 25.81px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(6) {
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(7) {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:first-of-type > li:nth-of-type(8) {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:nth-of-type(2) > li:first-of-type,
+li:nth-of-type(2),
+li:nth-of-type(4) {
+  font-size: 14px;
+
+  margin: 10px 0px;
+}
+.list > div > div > ul:nth-of-type(2) > li:nth-of-type(3) {
+  font-size: 13.89px;
+  margin: 10px 0px;
+}
+.list > div > div > ul:nth-of-type(3) > li:nth-of-type(1),
+li:nth-of-type(3),
+li:nth-of-type(4),
+li:nth-of-type(6),
+li:nth-of-type(5) {
+  font-size: 14px;
+}
+.list > div > div > ul:nth-of-type(3) > li:nth-of-type(2) {
+  font-size: 13.13px;
+}
+.list > div > div > ul:nth-of-type(3) > li:nth-of-type(7) {
+  font-size: 13.34px;
+}

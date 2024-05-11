@@ -1,0 +1,160 @@
+/* 전체 */
+body{ 
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; 
+  width: 100vw; 
+  margin: auto;}
+div {
+  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  background-color: black; 
+  color: white;}
+/* 공통 크기 */
+h1 {
+  font-size: 56px;
+  color: rgb(134, 134, 139);}
+h2 {font-size: 62.03px;}
+h3 {font-size: 20.67px;}
+h4 {font-size: 17.23px;}
+h5 {font-size: 80px;}
+/* 할당 */
+:root{
+  /* backgroundcolor */
+  --bgc: rgb(16, 16, 16);
+   /* buttonlayout 1_background*/
+  --btn1_bgc: rgb(51, 51, 51);
+  /* button1layout 1_border-radius */
+  --btn1_brr: 50px;
+  /* button 1_div_background */
+  --btn1_dbgc: rgb(0, 113, 227);
+  /* button 1_div_border-radius */
+  --btn1_div_brr: 100px;
+  /* a_color */
+  --aclr: rgb(41,151,255);
+}   
+/* aside-국적 */
+aside:first-child{
+  background-color:  rgb(240, 240, 242); 
+  width: 100vw; 
+  display: flex; 
+  justify-content: center;}
+aside > div {
+  display: flex; 
+  height: auto; 
+  align-items: center;  
+  gap: 0.5vw; 
+  width: 60%; }
+aside:first-child > div{
+  background-color: rgb(240, 240, 242); 
+  color: black; }
+aside:first-child > div > p {
+  width: 28vw; 
+  flex-grow: 1;}
+aside > div > select{
+  flex-grow: 0.9; 
+  width: 1.2vw; 
+  height: 3.2vh;}
+aside > div > button{
+  background-color: black; 
+  color: white; 
+  border-radius: 8px; 
+  flex-grow: 0.03;}
+aside > div > div {
+  flex-grow: 0.03; 
+  background: rgb(240, 240, 242); 
+  color: black; }
+aside > div > div > a {
+  text-decoration: none;}
+
+/* nav 부분 */
+nav{
+  display: flex; 
+  justify-content: center;}
+nav > ul {
+  display: flex; 
+  list-style: none; 
+  gap: 3vw; } 
+nav > ul > li> a{
+  color: white; 
+  text-decoration: none; 
+  text-decoration-line: none;}
+
+/* aside-구매안내문 */
+aside:last-child{ 
+  display: flex; 
+  justify-content: center; 
+  align-self: center; 
+  background-color: rgb(17, 17, 17);}
+aside:last-child > div{
+  background-color: rgb(17, 17, 17); 
+  width: 40%;}
+aside:last-child p > a {color: var(--aclr);}
+
+/* 아이폰 메인 */
+main > section:first-child{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;} 
+main > section:first-child > p:first-child{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end; 
+  font-size: 1.3rem; 
+  height: 10vh; 
+  justify-content: center;}
+main > section:first-child > div { 
+  display: flex; 
+  height: 24vh; 
+  align-items: flex-end;}
+main > section:first-child > div >div {
+  display: flex;       
+  flex-direction: column; 
+  height: 3vw;  
+  background-color: var(--btn1_dbgc); 
+  width: 5vw; 
+  justify-content: center; 
+  border-radius: 15px; 
+  height: 3.5vh;}
+main > section:first-child > div > div > a {
+  color: white; 
+  text-decoration: none;}     
+main > section:first-child > p:last-child{
+  font-weight: bold; 
+  display: flex; 
+  flex-direction: column; 
+  justify-self: flex-end; 
+  height: 10vh;} 
+/* 소개핵심 */
+main > section:nth-child(2){       
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(17, 17, 17);
+  justify-content: space-around;
+}
+main > section:nth-child(2) > div{
+  display: flex; 
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+  gap: 4vw;}
+main > section:nth-child(2) > div > div:first-child{
+  display: flex; 
+  flex-direction: row;
+  gap: 30vw;
+  background-color: rgb(17, 17, 17);
+}
+main > section:nth-child(2) > div >div:first-child > div >  a{
+  color: var(--btn1_dbgc);
+  text-decoration: none;
+}
+main > section:nth-child(2) > div >div:first-child > div {
+  background-color: rgb(17, 17, 17);
+}
+main > section:nth-child(2) > div > div:nth-child(2){
+  display: flex;
+  width: 60vw;
+  height: 40vh;
+}

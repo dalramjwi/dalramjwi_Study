@@ -1,0 +1,16 @@
+body {width: 100vw; height: 100vh; margin: 0; overflow: hidden; }
+body > div { width: 100vw; height: 100vh; overflow: hidden; background:rgb(173, 64, 64); display: grid; grid-template-rows: repeat(7, 1fr); grid-template-columns: repeat(8, 1fr);  }
+body > div > section:first-child{background-color: aqua; grid-column: 1/8;}
+body > div > section:nth-child(2){background-color: rgb(194, 201, 201); grid-column: 1/5;}
+body > div > section:nth-child(3){background-color: rgb(0, 0, 0); grid-column: 1/2;}
+body > div > section:nth-child(4){background-color: rgb(223, 102, 102); grid-column: 2/5;}
+body > div > section:nth-child(5){background-color: rgb(141, 116, 116); grid-row: 4/9; grid-column: 1/3;}
+body > div > section:nth-child(6){background-color: rgb(38, 56, 153); grid-row: 4/9; grid-column: 3/4;}
+body > div > section:nth-child(7){background-color: rgb(42, 42, 46); grid-row: 4/9; grid-column: 4/5;}
+body > div > section:nth-child(8){background-color: rgb(229, 229, 241); grid-row: 6/9; grid-column: 4/5;}
+body > div > section:nth-child(9){background-color: rgb(47, 47, 126); grid-row: 2/9; grid-column: 5/7;}
+body > div > section:nth-child(10){background-color: rgb(124, 79, 117); grid-row: 2/9; grid-column: 7/8;}
+body > div > section:nth-child(11){background-color: rgb(170, 24, 148); grid-row: 5/9; grid-column: 8/9;}
+body > div > section:nth-child(12){background-color: rgb(122, 125, 129); grid-row: 1/4; grid-column: 8/9;}
+
+

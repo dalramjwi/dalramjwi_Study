@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="place"></div>
+    <script>
+      // div root,place 변수 지정
+      let root = document.getElementById("root");
+      let place = document.getElementById("place");
+      //root에 div 생성, place에 btn 생성
+      let a = document.createElement("div");
+      let b = document.createElement("div");
+      root.append(a);
+      root.append(b);
+      let c = document.createElement("button");
+      place.append(c);
+      //div와 button style 작성
+      root.children[0].style.backgroundColor = "blue";
+      root.children[0].style.width = "100vw";
+      root.children[0].style.height = "50vh";
+      root.children[1].style.backgroundColor = "red";
+      root.children[1].style.width = "100vw";
+      root.children[1].style.height = "50vh";
+
+      console.dir(root.children[0]);
+    </script>
+  </body>
+</html>
